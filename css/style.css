@@ -1,0 +1,158 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+body {
+    background: url(https://fireart.studio/wp-content/uploads/2018/06/dribble-perfect.gif);
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    display:grid;
+}
+
+.space {
+
+    height:50px;
+    width:100%;
+    
+}
+
+/*Nav Styles*/
+.nav-wrapper {
+    display: flex;
+}
+
+.nav-link-wrapper a {
+    padding:20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0;
+    transition: 0.7s;
+}
+.nav-link-wrapper a:hover {
+    color:rgb(0, 0, 0);
+}
+
+.nav-wrapper {
+    width: 100%;
+    height:40px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-transform:uppercase;
+}
+
+.nav-link-wrapper {
+    border-right:1px solid rgb(255, 255, 255);
+    transition: 0.7s;
+    padding:12px;
+}
+
+.nav-link-wrapper:hover {
+    background-color: rgb(255, 255, 255);
+
+}
+
+.nav-wrapper img{
+    float:right;
+}
+#logo{
+    float:right;
+    border:none;
+    text-transform: none;
+    pointer-events: none;
+}
+/*HEADER INTRODUCTION*/
+
+.header {
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.introduction {
+    transition:0.7s;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgb(128, 128, 128);
+}
+
+.introduction:hover { 
+    box-shadow:none;
+}
+.introduction img{
+    width:100%;
+    height:auto;
+}
+
+.intro-desc {
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    transition: 0.7s;
+}
+
+button {
+    background-color: inherit;
+    
+    padding:10px;
+    margin:10px;
+    color:white;
+    border:none;
+    border-right: 1px solid white;
+    transition:0.7s;
+}
+button:hover {
+    background-color:white;
+    color:black;
+}
+
+.info-wrapper {
+    position:relative;
+    top:5vw;
+    color:white;
+    width:30%;
+    height:500px;
+}
+/*Responsive Image Gallery*/
+.gallery {
+    border-right:1px solid rgb(255, 255, 255);
+    padding:10px;
+    transition: 0.7s;
+}
+.gallery:hover {
+    
+    background-color: rgb(255, 255, 255);
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.7s;
+  }
+.desc:hover{ 
+    color:black;
+}
+.responsive {
+    padding:6px;
+    float: left;
+    width: 24.99999%;
+}
+  
+.image-gallery {
+    display:flex;
+    position: relative;
+    left:10vw;
+    
+}
