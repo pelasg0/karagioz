@@ -1,7 +1,7 @@
+
 body { 
-    font-family: Arial, Helvetica, sans-serif;
-    
-    
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-size:21px;
 }
 /*NAVIGATION BAR*/ 
 .nav-bar {
@@ -27,7 +27,7 @@ body {
 }
 .nav-img > div:hover {
     opacity:0.7;
-    padding:30px;
+    
 }
 /*HEADER*/
 .header {
@@ -46,6 +46,21 @@ body {
 .header-item2 { grid-area:midhead;}
 .header-item3 { grid-area:righthead;}
 
+
+.header-img1 {
+    height:600px;
+    width:400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition:0.5s;
+    
+}
+.header-img1:hover {
+    background-size:140%;
+
+}
 .header-item1 > img {
     height:600px;
     transition:0.7s;
@@ -55,8 +70,35 @@ body {
     transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
       
 }
-
-
+.header-item2 > button > a {
+    text-decoration: none;  
+}
+.button-text1 {
+    color:black;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+.header-item2 > button {
+    background-color: inherit;
+    height:50px;
+    width:115px;
+    transition:0.5s;
+    border:none;  
+}
+.header-item2 > button:hover {
+    background-color:rgb(196, 250, 115);
+}
+.header-img3 {
+    height:400px;
+    width:700px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition:0.5s;
+}
+.header-img3:hover {
+    background-size: 140%;
+}
 .header-item3 > img {
     height:400px;
     transition:0.7s;
