@@ -3,7 +3,16 @@ body {
     font-family: 'Zen Kurenaido', sans-serif;
     font-size:21px;
 }
+
 /*NAVIGATION BAR*/ 
+.nav-img-back {
+    background-image: url("header\ pics/kalen-kemp-ViYg9O8izyo-unsplash.jpg");
+    background-size:100%;
+    background-position: center;
+    height:100px;
+    width:100%;
+    
+}
 .nav-bar {
     display:flex;
 }
@@ -18,17 +27,8 @@ body {
 .nav-bar > div > a > img {
     height:40px;
 }
-.nav-img > div {
-    height:100px;
-    background-color: black;
-    width:100%;
-    transition:0.5s;
-    
-}
-.nav-img > div:hover {
-    opacity:0.7;
-    
-}
+
+
 /*HEADER*/
 .header {
     display:grid;
@@ -61,15 +61,8 @@ body {
     background-size:140%;
 
 }
-.header-item1 > img {
-    height:600px;
-    transition:0.7s;
-}
-.header-item1 > img:hover {
-    opacity:0.7;
-    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-      
-}
+
+
 .header-item2 > button > a {
     text-decoration: none;  
 }
@@ -99,19 +92,64 @@ body {
 .header-img3:hover {
     background-size: 140%;
 }
-.header-item3 > img {
-    height:400px;
-    transition:0.7s;
-    
-}
-.header-item3 > img:hover {
-    opacity:0.7;
-    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
+
+
 .header-icon1 > img {
     height:200px;
 
 }
 .header-icon2 > img {
     height:200px;
+}
+
+.main {
+    display:grid;
+    grid-template-areas:
+    'top top top' 
+    'botleft botmid botright' 
+    'bot bot bot' 
+             
+    ;
+}
+
+.main-item1 { grid-area:top;}
+.main-item2 { grid-area:botleft;}
+.main-item3 { grid-area:botmid;}
+.main-item4 { grid-area:botright;}
+.main-item5 { grid-area:bot;}
+
+
+
+.main-pic1 {
+    height:300px;
+    width:100%;
+    background-size: 100%;
+    background-position:center;
+    transition:0.5s;
+    
+}
+.main-pic1:hover {
+    height:500px;
+}
+
+.main-pic2 {
+    height:500px;
+    background-size: 100%;
+    background-position:center;
+    
+}
+.main-pic3 {
+    height:500px;
+    background-size: 100%;
+    background-position:center;
+    
+}
+.main-pic4 {
+    height:500px;
+    background-size: 100%;
+    background-position:center;
+    
+}
+.main-item5 {
+    padding:30px;
 }
