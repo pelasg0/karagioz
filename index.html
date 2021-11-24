@@ -1,109 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-<meta charset="UTF-8"> 
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Zen+Kurenaido&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" type="text/css" href="styles.css">
-
-<title>Test</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
 </head>
 <body>
-    <div class="container">
-
-        <div class="nav-img">
-            <div class="nav-img-back"></div>
-        </div>    
-
-        <div class="nav-bar">
-
-            <div class="nav-item1">
-                <a href="#"><img src="icons nav/brush.png"></a>
-            </div>
-
-            <div class="nav-item2">
-
-                <a href="#"><img src="icons nav/mail.png"></a>
-            </div>
-
-            <div class="nav-item3">
-
-                <a href="#"><img src="icons nav/cursor.png"></a>
-            </div>
-
-            <div class="nav-item4">
-
-                <a href="#"><img src="icons nav/transparency.png"></a>
-            </div>
-
-        </div>
-        <div class="header">
-
-            <div class="header-item1">
-
-                    <div class="header-img1" style ="background-image:url(header\ pics/tiago-alexandre-lopes-5VDFTgpwV2g-unsplash.jpg)">
-                    </div>   
-                    <h2>Lorem, ipsum.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequatur maiores laudantium deleniti quos, non obcaecati. Illum debitis veniam esse.</p>  
-                              
-            </div>
-
-            <div class="header-item2">
-
-                <h2>Welcome</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam deserunt, rerum illo iste atque qui ducimus tempore quod assumenda molestias temporibus modi at adipisci aut ipsum nesciunt nostrum, quam fugiat, nam dolores velit praesentium nisi. Facilis nulla fugit quasi commodi.</p>
-                <button class="button1">
-                    <a href="#"><h3 class="button-text1">Read More</h3></a>
-                </button>
-            </div> 
-            
-            <div class="header-item3">
-
-                <div class="header-img3" style = "background-image:url(header\ pics/torsten-van-dashorst-BXlmwEqC37c-unsplash.jpg)">
+    <!-- Header -->
+    <div class="header-background">    
+        <header class="header">    
+            <div class = "nav-cont">
+                <!--<img> space for a logo-->
+                <div class="header-inner-logo">
+                    <a href="#" class="logo">
+                        <img src="pics/owl.png" alt="owl">
+                    </a>
+                    <h3> Pelasgo </h3>
                 </div>
-                <h2>Lorem, ipsum.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, vero! Mollitia praesentium tenetur itaque perferendis voluptatem? Dolores numquam natus deserunt explicabo quod quia sit eum, itaque harum dolor voluptates fugiat?</p>       
+
+                <nav class="navigation">   
+                    <ul>
+                        <li><a href="#introbody"> Intro </a></li>
+                        <li><a href="#skillsbody"> Skills </a></li>
+                        <li><a href="#artlink"> Art </a></li>
+                        <li><a href="#"> Landscapes </a></li>
+                        <li><a href="#"> Characters </a></li>           
+                    </ul>
+                </nav>
             </div>
-
-        </div>
-        <div class="main">
-
-            <div class="main-item1">
-
-                <div class="main-pic1" style = "background-image: url(header\ pics/adrian-n-FBpklCZhDKo-unsplash.jpg)"></div>
-            </div>
-
-            <div class="main-item2">
-
-                <div class="main-pic2" style = "background-image:url(header\ pics/daniel-j-schwarz-Gsn6aD6vSSA-unsplash.jpg)"></div>
-            </div>
-
-            <div class="main-item3">
-
-                <div class="main-pic3"  style = "background-image:url(header\ pics/kay-mayer-MSdwjMAjjw4-unsplash.jpg)"></div>
-            </div>
-
-            <div class="main-item4">
-
-                <div class="main-pic4"  style = "background-image:url(header\ pics/hans-isaacson-AeRh-NGBVak-unsplash.jpg)"></div>
-            </div>
-
-            <div class="main-item5">
-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempore perspiciatis molestiae sapiente dignissimos. Neque similique sunt rerum, optio vero quis sint. Nulla repellendus voluptatem ab voluptates blanditiis pariatur minima labore aspernatur libero consequatur. Obcaecati ipsa ea sapiente nisi voluptates.
-            </div>
-
-        </div>
-
-        <div class="footer">
-
-
-
-        </div>
+        </header>     
     </div>
+
+    <section class="section-intro">
+        <div class="intro-body" id="introbody">
+            <img src="pics/f1c1985141ae734194fe69fd52dcb4eb.jpg" alt="pic">
+            <div class="intro-column">
+                <h2>Who am I?</h2>
+                <ul>
+                    <li><span>Artist</span></li>
+                    <li><span>Programmer</span></li>
+                    <li><span>Athlet</span></li>               
+                    <li><span>Gamer</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="skills-container">
+        <h2>Skills</h2>
+        <br>
+        <div class="skills-body" id="skillsbody">
+            <p>HTML</p>
+            <div class="container">
+            <div class="skills html">75%</div>
+            </div>
+
+            <p>CSS</p>
+            <div class="container">
+            <div class="skills css">55%</div>
+            </div>
+
+            <p>C#</p>
+            <div class="container">
+            <div class="skills csh">15%</div>
+            </div>
+
+            <p>Photoshop</p>
+            <div class="container">
+            <div class="skills ps">80%</div>
+            </div>
+
+            <p>Blender</p>
+            <div class="container">
+            <div class="skills bl">50%</div>
+            </div>
+
+            
+
+          
+        </div>
+    </section>
+    <section class="art" id="artlink">
+        <h2> Gallery </h2>
+        <div class="chars">
+            <div class="art-content">
+                <div class="art-item">
+                <a target="_blank" href="#">
+                    <img src="gallerypics/simeon-gerchev-bai-ganio111.jpg" alt="Kek" height="500" width="500">
+                </a>
+                <div class="desc">Mighty warrior fighting for the liberty of his country.</div>
+                </div>
+            </div>
+            
+            
+            <div class="art-content">
+                <div class="art-item">
+                <a target="_blank" href="#">
+                    <img src="gallerypics/simeon-gerchev-druid-remaked.jpg" alt="Kek" height="500" width="440">
+                </a>
+                <div class="desc">Duhomir, the wild Druid.</div>
+                </div>
+            </div>
+        </div>
+        <div class="lands"> 
+            <div class="art-content">
+                <div class="art-item">
+                <a target="_blank" href="#">
+                    <img src="gallerypics/simeon-gerchev-desert-wallpaper.jpg" alt="Kek" height="400" width="800">
+                </a>
+                <div class="desc">The mysterious forests in the desert of Kazawan.</div>
+                </div>
+            </div>
+            
+            <div class="art-content">
+                <div class="art-item">
+                <a target="_blank" href="#">
+                    <img src="gallerypics/simeon-gerchev-hut1.jpg" alt="Kek" height="400" width="800">
+                </a>
+                <div class="desc">A small hut in Blender.</div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
 </body>
+
+
+
+
+</html>
+
+
+
+
+
+

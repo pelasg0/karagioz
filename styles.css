@@ -1,189 +1,272 @@
 
-body { 
-    font-family: 'Zen Kurenaido', sans-serif;
-    font-size:21px;
-    padding: 0px;
-    margin: 0px;
-    background-color: rgb(20, 20, 20);
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montagu+Slab:wght@100;300;600&family=Zen+Kurenaido&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montagu+Slab:wght@100;300;600&family=Zen+Kurenaido&display=swap');*/
+
+
+/*Body*/
+
+
+* {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 800;
+    box-sizing: border-box;}
+
+
+/*-----Header-----*/
+
+
+/*header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;}*/
+
+
+.header-background {
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    height:50vw;
+    background-image: url(pics/adam-jicha-LM6pMVwlIiI-unsplash.jpg);
+    }
+
+
+.header-inner-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;}
+
+
+.header-inner-logo h3 {
+    font-weight: 600;
+    font-size: 30px;
+    margin-left: 5px;
     color:white;}
 
-    
 
-/*===========   NAV IMG BACK  ===========*/
-.nav-img-back {
-    background-image: url("header\ pics/kalen-kemp-ViYg9O8izyo-unsplash.jpg");
-    background-size:cover;
-    background-position: center;
-    height:200px;
-    width:100%;}
-
-/*===========   NAV IMG BACK  ===========*/
+.header-inner-logo .logo img {
+    margin-top:10px;
+    max-width: 70px;}
 
 
+/*-----Header-----*/
 
 
-/*===========   NAV BAR  ===========*/
-.nav-bar {
-    display:flex;}
+/*-----Nav Bar-----*/
 
 
-.nav-bar > div {
-    padding:10px;
-    height:35px;
-    transition: 0.5s;}
+.nav-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:auto;}
 
 
-.nav-bar > div:hover {
-    background-color: rgb(255, 255, 255);}
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;}
 
 
-.nav-bar > div > a > img {
-    height:40px;}
+.navigation ul {
+    list-style-type: none; /*remove bullets*/
+    display: flex;
+    justify-content: center;
+    align-items: center;}
 
 
-
-/*===========   NAV BAR  ===========*/
-
-/*===========   HEADER  ===========*/
-.header {
-    display:grid;
-    grid-template-areas:
-    'lefthead midhead midhead midhead righthead';
-    grid-gap:10px;   
-    margin-top:70px;}
+.navigation li {
+    margin:20px;}
 
 
-.header > div {
-    padding:40px;}
-
-
-.header-item1 { grid-area:lefthead;}
-.header-item2 { grid-area:midhead;}
-.header-item3 { grid-area:righthead;}
-
-
-.header-img1 {
-    height:600px;
-    width:400px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    transition:0.5s;}
-
-
-
-.header-img1:hover {
-    background-size:140%;}
-
-
-
-
-.header-item2 > button > a {
-    text-decoration: none;}
-
-
-.button-text1 {
+.navigation a {
+    text-decoration: none;
     color:rgb(255, 255, 255);
-    font-family: 'Zen Kurenaido', sans-serif;}
-
-
-.header-item2 > button {
-    background-color: inherit;
-    height:50px;
-    width:115px;
-    border:none;}
-
-.button-text1 {
-    text-decoration:none;
+    font-size:16px;
+    font-weight: 400;
     transition:0.5s;}
 
 
-
-.button-text1:hover {
-    text-decoration:underline;
-    text-decoration-color:white;}
-
-
-.header-img3 {
-    height:400px;
-    width:700px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    transition:0.5s;}
+.navigation a:hover {
+    color:rgb(163, 163, 163);}
+  
+    
+.navigation ul li + li {
+    margin-left: 8px;}
 
 
-
-.header-img3:hover {
-    background-size: 140%;}
+/*-----Nav Bar-----*/
 
 
+/*-----Section Intro-----*/
 
-.header-icon1 > img {
-    height:200px;}
+.section-intro {
+    background-color: rgb(245, 247, 255);
+    padding-top:10vh;
+    padding-bottom:10vh;
+    width:100%;
+    
+}
 
+.intro-body {
+    display:flex;
+    justify-content: space-between;
+    gap:5vw;
+}
 
+.intro-column {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    padding-right: 40vw;
+    padding-top:10vh;
+    padding-bottom:10vh;
+    float:right;
+}
 
-.header-icon2 > img {
-    height:200px;}
+.intro-column > h2 {
+    padding-bottom: 10px;
+    color:rgb(66, 66, 66);
+}
+.intro-column > ul > li {
+    padding:10px;
+}
 
+.intro-column ul li span {
+    color:rgb(66, 66, 66);
+    font-size:15px;
+}
 
-/*===========   HEADER  ===========*/
+.intro-column ul {
+    list-style-type: upper-roman;
+    padding-left:3vw;
+    color:rgb(66, 66, 66);
+}
 
+.intro-body img { 
+    height:20vh;
+    transform:-50%, -50%;
+    padding-left: 20vw;
+    margin-top:10vh;
 
-
-.main {
-    display:grid;
-    grid-template-areas:
-    'top top top' 
-    'botleft botmid botright' 
-    'bot bot bot';
+    
 }
 
 
-
-.main-item1 { grid-area:top;}
-.main-item2 { grid-area:botleft;}
-.main-item3 { grid-area:botmid;}
-.main-item4 { grid-area:botright;}
-.main-item5 { grid-area:bot;}
+/*-----Section Intro-----*/
 
 
 
-.main-pic1 {
-    height:300px;
+
+/*-----Skills Section-----*/
+
+
+.skills-container {
+    background-image: url(gallerypics/kelly-sikkema-eBo-8_0i5ic-unsplash.jpg);
+    background-size: 100%;
+    background-position: center;
     width:100%;
+}
+.container {
+  width: 100%;
+    background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top:20px;
+  margin-bottom:20px;
+  color: rgb(255, 255, 255);
+}
+
+.html {width: 75%; background-color: #808080;}
+.css {width: 55%; background-color: #808080;}
+.csh {width: 15%; background-color: #808080;}
+.ps {width: 80%; background-color: #808080;}
+.bl {width: 50%; background-color: #808080;}
+
+.skills-body {
+    padding-top:10vh;
+    padding-right:10vw;
+    padding-left:10vw;
+    padding-bottom:5vh;
+}
+
+.skills-body p {
+    text-align:center;
+}
+
+.skills-container > h2 {
+    text-align:center;
+    padding-top:19vh;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+/*-----Skills Section-----*/
+
+/*-----Gallery-----*/
+
+.art {
+
+    background-image: url(gallerypics/birmingham-museums-trust-wKlHsooRVbg-unsplash.jpg);
     background-size: 100%;
-    background-position:center;
-    transition:0.5s;
-    filter: brightness(68%);}
     
+}
+
+.art > h2 {
+    text-align: center;
+    color:white;
+    font-size: 40px;
+    padding-bottom:5vh;
+    padding-top:5vh;
+}
+.art-content {
+    border:1px solid black;
+    background-color: white;
+    margin:20px;
+}
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+.gallery img {
+    width: 100%;
+    height: auto;
+  }
 
 
-.main-pic1:hover {
-    height:500px;}
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
 
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
 
+  .chars {
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+      gap:10vw;
+  }
+  .lands {
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+      gap:10vw;
+  }
 
-.main-pic2 {
-    height:500px;
-    background-size: 100%;
-    background-position:center;}
-
-
-.main-pic3 {
-    height:500px;
-    background-size: 100%;
-    background-position:center;}
-
-
-.main-pic4 {
-    height:500px;
-    background-size: 100%;
-    background-position:center;}
-
-
-.main-item5 {
-    padding:30px;}
+ 
