@@ -319,7 +319,7 @@ p
     display: grid;
     height: 100%;
     place-items: center;
-    background-image: url("imgs/skillsimgs/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg");
+    background-color: rgb(22, 22, 22);
     background-size: 100%;
     background-position: center;
 
