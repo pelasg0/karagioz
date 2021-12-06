@@ -1,140 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">RESPONSIVE
+    -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <title> Portfolio </title>
+    <link rel= "stylesheet" href="styles.css"> 
 </head>
 <body>
-    <!-- Header -->
-    <div class="header-background">    
-        <header class="header">    
-            <div class = "nav-cont">
-                <!--<img> space for a logo-->
-                <div class="header-inner-logo">
-                    <a href="#" class="logo">
-                        <img src="pics/owl.png" alt="owl">
-                    </a>
-                    <h3> Pelasgo </h3>
-                </div>
-
-                <nav class="navigation">   
-                    <ul>
-                        <li><a href="#introbody"> Intro </a></li>
-                        <li><a href="#skillsbody"> Skills </a></li>
-                        <li><a href="#artlink"> Art </a></li>
-                        <li><a href="#"> Landscapes </a></li>
-                        <li><a href="#"> Characters </a></li>           
-                    </ul>
-                </nav>
+    <!--<div class="toggle" onclick="toggleMenu();"></div>                  BUTTON
+    -->            
+    <nav> 
+    <ul class="navigation">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </nav>      
+    <section class="banner" id="home">
+        <div class="imgSidebar">
+            <img src="imgs/sidebarimg/daniel-lincoln-XTLISGANyy8-unsplash-min.jpg">
+        </div>
+        <div class="contentBx">
+            <div class="logoText"><img src="imgs/toggleicons/logo.png" height="70vh"></div>
+            <div>
+                <h4><span>Привет</span>, I'm</h4>
+                <h2>Simeca</h2>
+                <h4>I'm Lorem Ipsum</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur iusto exercitationem dolorum architecto excepturi sequi neque ducimus, accusantium cum minus hic sed possimus amet, velit voluptatibus molestiae ex voluptates modi iste assumenda vel et. Corrupti perspiciatis excepturi harum quasi cum.</p>
+                <a href="#about" class="btn">About Me</a>
             </div>
-        </header>     
-    </div>
+            <ul class="sci">
+                <li><a href="#"><img src="imgs/socialmediaicons/facebook-logo-108.png" ></a></li>
+                <li><a href="#"><img src="imgs/socialmediaicons/instagram-111.png" ></a></li>
+                <li><a href="#"><img src="imgs/socialmediaicons/photos-10613.png" ></a></li>
+            </ul>
+        </div>
+        
+    </section>
 
-    <section class="section-intro">
-        <div class="intro-body" id="introbody">
-            <img src="pics/f1c1985141ae734194fe69fd52dcb4eb.jpg" alt="pic">
-            <div class="intro-column">
-                <h2>Who am I?</h2>
-                <ul>
-                    <li><span>Artist</span></li>
-                    <li><span>Programmer</span></li>
-                    <li><span>Athlet</span></li>               
-                    <li><span>Gamer</span></li>
+    <section class="about" id="about">
+        <div class="title">
+            <h2>About Me</h2> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, illum.</p>
+        </div>
+        <div class="content">
+            <div class="TextBx">
+                <ul class="Details">
+                    <h1>I'm a</h1>
+                    <li>Frontend <span>Developer</span></li>
+                    <li>Backend <span>Developer</span></li>
+                    <li>2D <span>Artist</span></li>
+                    <li>3D <span>Artist</span></li><div class="cursorbl"></div>       
                 </ul>
             </div>
-        </div>
-    </section>
-    <section class="skills-container">
-        <h2>Skills</h2>
-        <br>
-        <div class="skills-body" id="skillsbody">
-            <p>HTML</p>
-            <div class="container">
-            <div class="skills html">75%</div>
-            </div>
-
-            <p>CSS</p>
-            <div class="container">
-            <div class="skills css">55%</div>
-            </div>
-
-            <p>C#</p>
-            <div class="container">
-            <div class="skills csh">15%</div>
-            </div>
-
-            <p>Photoshop</p>
-            <div class="container">
-            <div class="skills ps">80%</div>
-            </div>
-
-            <p>Blender</p>
-            <div class="container">
-            <div class="skills bl">50%</div>
-            </div>
-
-            
-
-          
-        </div>
-    </section>
-    <section class="art" id="artlink">
-        <h2> Gallery </h2>
-        <div class="chars">
-            <div class="art-content">
-                <div class="art-item">
-                <a target="_blank" href="#">
-                    <img src="gallerypics/simeon-gerchev-bai-ganio111.jpg" alt="Kek" height="500" width="500">
-                </a>
-                <div class="desc">Mighty warrior fighting for the liberty of his country.</div>
-                </div>
-            </div>
-            
-            
-            <div class="art-content">
-                <div class="art-item">
-                <a target="_blank" href="#">
-                    <img src="gallerypics/simeon-gerchev-druid-remaked.jpg" alt="Kek" height="500" width="440">
-                </a>
-                <div class="desc">Duhomir, the wild Druid.</div>
-                </div>
-            </div>
-        </div>
-        <div class="lands"> 
-            <div class="art-content">
-                <div class="art-item">
-                <a target="_blank" href="#">
-                    <img src="gallerypics/simeon-gerchev-desert-wallpaper.jpg" alt="Kek" height="400" width="800">
-                </a>
-                <div class="desc">The mysterious forests in the desert of Kazawan.</div>
-                </div>
-            </div>
-            
-            <div class="art-content">
-                <div class="art-item">
-                <a target="_blank" href="#">
-                    <img src="gallerypics/simeon-gerchev-hut1.jpg" alt="Kek" height="400" width="800">
-                </a>
-                <div class="desc">A small hut in Blender.</div>
-                </div>
+            <div class="imgBx">
+                <img src="imgs/avatarbox/nahel-abdul-hadi-flha0KwRrRc-unsplash.jpg">
             </div>
         </div>
 
 
 
     </section>
+
+    <!--<script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');               BUTTON JS
+            menuToggle.classList.toggle('active')
+        }
+    </script> -->
+
 </body>
 
 
 
 
 </html>
-
-
-
-
-
-
