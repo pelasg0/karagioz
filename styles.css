@@ -71,7 +71,7 @@ nav ul li a:hover:not(.active)
 section
 {
     padding:100px;
-    min-height: 100vh;
+    min-height: 100vh;         /*every section has 100% height this way*/
 }
 
 .banner 
@@ -312,3 +312,138 @@ p
     animation: cursor-blink 1.5s steps(2) infinite;   
 }
 /*about*/
+
+/*skills*/
+.skills 
+{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background-image: url("imgs/skillsimgs/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg");
+    background-size: 100%;
+    background-position: center;
+
+}
+
+.skills-bar 
+{
+    width: 600px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px 30px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+.skills-bar .bar 
+{
+    margin: 20px 0;
+}
+
+.skills-bar .bar:first-child
+{
+    margin-top: 0px;
+}
+.skills-bar .bar .info
+{
+    margin-bottom: 5px;
+}
+.skills-bar .bar .info span 
+{
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.skills-bar .bar .progress-line
+{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;  
+    border-radius: 10px;
+}
+.bar .progress-line span 
+{
+    height: 100%;
+    width: 80%;
+    background: #333;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.progress-line.html span
+{
+    width: 70%;
+}
+.progress-line.css span
+{
+    width: 50%;
+}
+.progress-line.cs span
+{
+    width: 30%;
+}
+.progress-line.ps span
+{
+    width: 80%;
+}
+.progress-line.bl span
+{
+    width: 40%;
+}
+.progress-line.il span
+{
+    width: 40%;
+}
+
+
+.bar .progress-line span::before /*small black pointer*/
+{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+}
+.bar .progress-line span::after /*background num*/
+{
+    position: absolute;
+    right: 0;
+    top: -24px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    background: #000;
+    padding: 1px 8px;
+    border-radius: 3px;
+   
+}
+
+.progress-line.html span::after
+{
+    content:"70%";
+}
+.progress-line.css span::after
+{
+    content:"50%";
+}
+.progress-line.cs span::after
+{
+    content:"30%";
+}
+.progress-line.ps span::after
+{
+    content:"80%";
+}
+.progress-line.bl span::after
+{
+    content:"40%";
+}
+.progress-line.il span::after
+{
+    content:"40%";
+}
