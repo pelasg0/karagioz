@@ -49,11 +49,13 @@ nav ul
     z-index: 100;
     opacity: 0.6;
     transition: 0.6s;
+    
 }
 nav ul:hover
 {
     opacity:1;
     padding-top: 5px;
+    
 }
   
 nav ul li 
@@ -631,3 +633,93 @@ p
   }
 
 /*character gallery*/
+
+
+
+
+@media (max-width: 991px)
+{
+    nav ul li a
+    {
+        font-size: 40px;
+    }
+    nav ul:hover 
+    {
+        padding-top:0px;
+    }
+    nav ul li a:hover
+    {
+        transform: scale(1);
+    }
+    nav ul 
+    {
+        height: 100vh;
+    }
+    nav ul li
+    {
+        width: 100%;
+        padding-top:35px;
+        padding-bottom:35px;
+        
+    }
+    nav ul
+    {
+    opacity: 1;
+     position: relative;   
+    }  
+    .banner .imgSidebar
+    {
+        display: none;
+    }
+    .banner .contentBx
+    {
+        width: 100%;
+        padding: 40px;
+    }
+    .logoText {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+    .sci
+    {
+        left: 40px;
+    }
+    section 
+    {
+        padding: 40px;
+    }
+    .about .content .textBx
+    {
+        min-width: 100%;
+        width: 100%;
+    }
+    .about .content
+    {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .about .content .imgBx
+    {   
+        margin-left: 0;
+        transform: scale(0.6);
+    }
+    .skills-bar
+    {
+        width: 80%;
+        
+    }
+    
+    .characters-gallery-row
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
