@@ -214,25 +214,19 @@
             </div>          
           </div>
           
-          <!-- The expanding image container -->
+          <!-- container for expanding image -->
           <div class="characters-gallery-container">
-            <!-- Close the image -->
+            <!-- closing the image -->
             <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
           
-            <!-- Expanded image -->
+            <!-- expanded image -->
             <img id="expandedImg" style="width:100%">
           
-            <!-- Image text -->
+            <!-- image text -->
             <div id="imgtext"></div>
           </div>
     </section>
 
-    <!--<script>
-        function toggleMenu(){
-            const menuToggle = document.querySelector('.toggle');               BUTTON JS
-            menuToggle.classList.toggle('active')
-        }
-    </script> -->
 <script>
     //SLIDE
 var slideIndex = 1;
@@ -265,7 +259,7 @@ function showSlides(n) {
 }
     //SLIDE
 
-    //gallery
+    //GALLERY
     function myFunction(imgs) {
   // Get the expanded image
   var expandImg = document.getElementById("expandedImg");
@@ -278,6 +272,8 @@ function showSlides(n) {
   // Show the container element (hidden with CSS)
   expandImg.parentElement.style.display = "block";
     } 
+
+    //GALLERY
 </script>
 </body>
 

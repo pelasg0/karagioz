@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montagu+Slab:wght@100;300;600&family=Zen+Kurenaido&display=swap');
+
+/*cursos blink*/
 @keyframes cursor-blink {
     0% {
         opacity: 0;
       }
   }
+/*cursos blink*/
+
+/*body*/
 *
 {
     margin: 0;
@@ -11,29 +16,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
-.toggle 
-{
-    position: fixed;
-    top: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    background: url(imgs/toggleicons/menu.png);
-    background-size: 35px;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    z-index: 300;
-}
-
-.toggle.active 
-{
-    background: url(imgs/toggleicons/close.png);
-    background-size: 30px;
-    background-position:center;
-    background-repeat: no-repeat;
-}
+/*body*/
 
 /*nav bar*/
 nav ul 
@@ -88,6 +71,7 @@ section
     min-height: 100vh;         /*every section has 100% height this way*/
 }
 
+/*banner*/
 .banner 
 {
     position:relative;
@@ -144,12 +128,6 @@ section
     color: #333;
     font-weight: 300;
 }
-/*.banner .contentBx h4 span 
-{
-    color: #ff3e1c;
-    font-size: 1.5em;
-    font-weight: 700;
-}*/
 
 .banner .contentBx h2 
 {
@@ -165,6 +143,7 @@ p
     font-weight: 300;
 }
 
+/*banner*/
 
 /*button*/
 .btn 
@@ -470,7 +449,8 @@ p
     content:"30%";
 }
 
-/*gallery*/
+/*GALLERY*/
+
 .landscape-gallery
 {
     background-color: rgb(22, 22, 22);
@@ -575,68 +555,101 @@ p
     opacity: 1;
 }
 
+/*GALLERY*/
 
 
-/*gallery*/
+
 
 /*character gallery*/
 .characters-gallery
 {
     background-color: rgb(22, 22, 22);
 }
-.characters-gallery-column {
+.characters-gallery-column 
+{
     float: left;
     width: 25%;
     padding: 10px;
-  }
+}
   
-  /* Style the images inside the grid */
-  .characters-gallery-column img {
+/* Style the images inside the grid */
+.characters-gallery-column img 
+{
     opacity: 0.8;
     cursor: pointer;
-  }
+}
   
-  .characters-gallery-column img:hover {
+.characters-gallery-column img:hover 
+{
     opacity: 1;
-  }
+}
   
-  /* Clear floats after the columns */
-  .characters-gallery-row:after {
+/* Clear floats after the columns */
+.characters-gallery-row:after 
+{
     content: "";
     display: table;
     clear: both;
-  }
+}
   
-  /* The expanding image container (positioning is needed to position the close button and the text) */
-  .characters-gallery-container {
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.characters-gallery-container 
+{
     position: relative;
     display: none;
-  }
+}
   
-  /* Expanding image text */
-  #imgtext {
+/* Expanding image text */
+#imgtext 
+{
     position: absolute;
     bottom: 15px;
     left: 15px;
     color: white;
     font-size: 20px;
-  }
+}
   
-  /* Closable button inside the image */
-  .closebtn {
+/* Closable button inside the image */
+.closebtn 
+{
     position: absolute;
     top: 10px;
     right: 15px;
     color: white;
     font-size: 35px;
     cursor: pointer;
-  }
+}
 
 /*character gallery*/
 
+/*media*/
 
 
+@media (max-width: 1500px)
+{
+    .characters-gallery-row
+    {
+        display: grid;
+        grid-template-columns: auto auto auto;
+       
+    }
+  
 
+}
+
+@media (max-width: 1040px)
+{
+    .characters-gallery-row
+    {
+        display: grid;
+        grid-template-columns: auto auto;   
+    }
+    .characters-gallery
+    {
+        
+        height: 200em;
+    }
+}
 @media (max-width: 991px)
 {
     nav ul li a
@@ -716,28 +729,23 @@ p
         width: 100%;
         
     }
-
     .landscape-gallery
     {
         padding: 0.1em;
        
     }
-    
+}
+@media (max-width: 736px)
+{
     .characters-gallery-row
     {
-        display: flex;
-        flex-direction: column;
-    }
-    .characters-gallery
-    {
-        
-        height: 200em;
+        display: grid;
+        grid-template-columns: auto;   
     }
 }
-
-    @media (max-width: 400px)
-    {
-        .characters-gallery-column
+@media (max-width: 400px)
+{
+    .characters-gallery-column
     {
         width: auto;
         height: auto;
@@ -747,7 +755,10 @@ p
         width: 100%;
         height: 100%;
     }
-    }
+}
+
+
+/*media*/
 
 
 
