@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="scripts.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title> Portfolio </title>
@@ -11,19 +12,19 @@
     -->            
     <nav> 
     <ul class="navigation">
+        <img src="imgs/toggleicons/logo1.png" height="40vh">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#landscape-gallery">Landscapes</a></li>
-        <li><a href="#characters-gallery">Characters</a></li>
+        <li><a href="#landscape-slideshow">Slider</a></li>
+        <li><a href="#characters-gallery">Gallery</a></li>
       </ul>
     </nav>      
     <section class="banner" id="home">
         <div class="imgSidebar">
-            <img src="imgs/sidebarimg/jefferson-santos-V9sv7QrDUgc-unsplash.jpg">
+            <img src="imgs/avatarbox/tim-mossholder-kD70xb1pUdg-unsplash-min.jpg">
         </div>
         <div class="contentBx">
-            <div class="logoText"><img src="imgs/toggleicons/logo1.png" height="80vh"></div>
             <div>
                 <h4><span>Привет</span>, I'm</h4>
                 <h2>Simeon Gerchev</h2>
@@ -34,9 +35,9 @@
                 <a href="#about" class="btn">About Me</a>
             </div>
             <ul class="sci">
-                <li><a href="#"><img src="imgs/socialmediaicons/facebook-logo-108.png" ></a></li>
-                <li><a href="#"><img src="imgs/socialmediaicons/instagram-111.png" ></a></li>
-                <li><a href="#"><img src="imgs/socialmediaicons/photos-10613.png" ></a></li>
+                <li><a href="https://www.facebook.com/Recenge/"><img src="imgs/socialmediaicons/facebook-logo-108.png" ></a></li>
+                <li><a href="https://www.instagram.com/simeca_g/"><img src="imgs/socialmediaicons/instagram-111.png" ></a></li>
+                <li><a href="https://www.artstation.com/vincyay"><img src="imgs/socialmediaicons/photos-10613.png" ></a></li>
             </ul>
         </div>
         
@@ -47,237 +48,140 @@
             <h2>About Me</h2> 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, illum.</p>
         </div>
-        <div class="content">
+        <div class="content-about">
             <div class="TextBx">
-                <ul class="Details">
-                    <h1>I am interested in</h1>
-                    <li>Frontend <span>Development</span></li>
-                    <li>Backend <span>Development</span></li>
-                    <li>2D <span>Art</span></li>
-                    <li>3D <span>Art</span></li><div class="cursorbl"></div>       
+                <ul class="details-about">
+                    <h1>I Am Interested In</h1>
+                    <li>Web Development<span> ,</span></li>
+                    <li>Web Design<span> ,</span></li>
+                    <li>Game Development<span> ,</span></li>                   
+                    <li>Game Design<span> ,</span></li>
+                    <li>Concept Art<span> ,</span></li><div class="cursorbl"></div>       
                 </ul>
             </div>
             <div class="imgBx">
-                <img src="imgs/avatarbox/logo8pic-1.png">
+                <img src="imgs/avatarbox/window.png">
             </div>
         </div>
     </section>
     <section class="skills" id="skills">
-        <div class="skills-bar">
-            <div class="bar">
-                <div class="info">
-                    <span>HTML</span>
+        <div class="inner-skills">      
+            <div class="title">
+                <h2>My Skills</h2> 
+            </div>   
+            <div class= "container-skills">
+                <div class= "box-skill">
+                    <div class= "title-skill">
+                        <div class= "img-skill">
+                            <img src= "imgs/skillSectionImgs/file.png" class="icon-skill">
+                        </div>
+                        <h3>HTML</h3>
+                    </div>
+                    <p>Advanced, 1 Year of Experience</p>
                 </div>
-                <div class="progress-line html"><span></span></div>
-            </div>
-            <div class="bar">
-                <div class="info">
-                    <span>CSS</span>
+                <div class= "box-skill">
+                    <div class= "title-skill">
+                        <div class= "img-skill">
+                            <img src= "imgs/skillSectionImgs/css.png" class="icon-skill">
+                        </div>
+                        <h3>CSS</h3>
+                    </div>
+                    <p>Intermediate, 11 Months of Experience</p>
                 </div>
-                <div class="progress-line css"><span></span></div>
-            </div>
-            <div class="bar">
-                <div class="info">
-                    <span>C#</span>
+                <div class= "box-skill">
+                    <div class= "title-skill">
+                        <div class= "img-skill">
+                            <img src= "imgs/skillSectionImgs/js.png" class="icon-skill">
+                        </div>
+                        <h3>JAVA SCRIPT</h3>
+                    </div>
+                    <p>Beginner, 2 Months of Experience</p>
                 </div>
-                <div class="progress-line cs"><span></span></div>
-            </div>
-            <div class="bar">
-                <div class="info">
-                    <span>Photoshop</span>
+                <div class= "box-skill">
+                    <div class= "title-skill">
+                        <div class= "img-skill">
+                            <img src= "imgs/skillSectionImgs/c-sharp.png" class="icon-skill">
+                        </div>
+                        <h3>C#</h3>
+                    </div>
+                    <p>Beginner, 1/2 Year of Experience</p>
                 </div>
-                <div class="progress-line ps"><span></span></div>
-            </div>
-            <div class="bar">
-                <div class="info">
-                    <span>Blender</span>
+                <div class= "box-skill">
+                    <div class= "title-skill">
+                        <div class= "img-skill">
+                            <img src= "imgs/skillSectionImgs/psd.png" class="icon-skill">
+                        </div>
+                        <h3>Photoshop</h3>
+                    </div>
+                    <p>Advanced, 7+ Years of Experience</p>
                 </div>
-                <div class="progress-line bl"><span></span></div>
-            </div>
-            <div class="bar">
-                <div class="info">
-                    <span>Illustrator</span>
+                <div class= "box-skill">
+                    <div class= "title-skill">
+                        <div class= "img-skill">
+                            <img src= "imgs/skillSectionImgs/wolke.png" class="icon-skill">
+                        </div>
+                        <h3>Illustrator</h3>
+                    </div>
+                    <p>Beginner, 1/2 Year of Experience</p>
                 </div>
-                <div class="progress-line il"><span></span></div>
-            </div>
-            <div class="bar">
-                <div class="info">
-                    <span>Java Script</span>
+                <div class= "box-skill">
+                    <div class= "title-skill">
+                        <div class= "img-skill">
+                            <img src= "imgs/skillSectionImgs/indesign.png" class="icon-skill">
+                        </div>
+                        <h3>InDesign</h3>
+                    </div>
+                    <p>Beginner, 1/2 Year of Experience</p>
                 </div>
-                <div class="progress-line js"><span></span></div>
+                <div class= "box-skill">
+                    <div class= "title-skill">
+                        <div class= "img-skill">
+                            <img src= "imgs/skillSectionImgs/blender.png" class="icon-skill">
+                        </div>
+                        <h3>Blender (3D Software)</h3>
+                    </div>
+                    <p>Beginner, 1/2 Year of Experience</p>
+                </div>
             </div>
         </div>
     </section>
-
-    <section class = "landscape-gallery" id = "landscape-gallery">
-
-        <div class="landscape-gallery-container">
-            <div class="mySlides">
-                <div class="numbertext">1 / 6</div>
-                <img src="imgs/slider landscape imgs/abandonedd.png" style="width:100%">
-            </div>
+    <section class = "landscape-slideshow" id = "landscape-slideshow">
+        <div class = "landscape-slider">
+            <div class = "landscape-slides">
+                <input type = "radio" name = "landscape-radio-btn" id = "landscape-radio1">
+                <input type = "radio" name = "landscape-radio-btn" id = "landscape-radio2">
+                <input type = "radio" name = "landscape-radio-btn" id = "landscape-radio3">
             
-            <div class="mySlides">
-                <div class="numbertext">2 / 6</div>
-                <img src="imgs/slider landscape imgs/forestt.png" style="width:100%">
-            </div>
+                <div class = "landscape-slide first">
+                    <img src = "imgs/slider landscape imgs/1.jpg" alt = "">
+                </div>
+                <div class = "landscape-slide">
+                    <img src = "imgs/slider landscape imgs/2.jpg" alt = "">
+                </div>
+                <div class = "landscape-slide">
+                    <img src = "imgs/slider landscape imgs/3.jpg" alt = "">
+                </div>
             
-            <div class="mySlides">
-                <div class="numbertext">3 / 6</div>
-                <img src="imgs/slider landscape imgs/desert wallpaper.png" style="width:100%">
-            </div>
-                
-            <div class="mySlides">
-                <div class="numbertext">4 / 6</div>
-                <img src="imgs/slider landscape imgs/Houseeeee.png" style="width:100%">
-            </div>
-            
-            <div class="mySlides">
-                <div class="numbertext">5 / 6</div>
-                <img src="imgs/slider landscape imgs/moountains.png" style="width:100%">
-            </div>
-                
-            <div class="mySlides">
-                <div class="numbertext">6 / 6</div>
-                <img src="imgs/slider landscape imgs/abandoned city 2.png" style="width:100%">
-            </div>
-                
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-            
-            <div class="caption-container">
-                <p id="caption"></p>
-            </div>
-        
-          <div class="landscape-gallery-row">
-                <div class="landscape-gallery-column">
-                <img class="demo cursor" src="imgs/slider landscape imgs/sub bar/abandonedd.png" style="width:100%" onclick="currentSlide(1)" alt="House">
+                <div class = "landscape-navigation-auto">
+                    <div class = "landscape-auto-btn1"></div>
+                    <div class = "landscape-auto-btn2"></div>
+                    <div class = "landscape-auto-btn3"></div>
                 </div>
-                <div class="landscape-gallery-column">
-                <img class="demo cursor" src="imgs/slider landscape imgs/sub bar/forestt.png" style="width:100%" onclick="currentSlide(2)" alt="Lost in the Woods">
+                <div class = "landscape-navigation-manual">
+                    <label for ="landscape-radio1" class = "landscape-manual-btn"></label>
+                    <label for ="landscape-radio2" class = "landscape-manual-btn"></label>
+                    <label for ="landscape-radio3" class = "landscape-manual-btn"></label>
                 </div>
-                <div class="landscape-gallery-column">
-                <img class="demo cursor" src="imgs/slider landscape imgs/sub bar/desert wallpaper.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains">
-                </div>
-                <div class="landscape-gallery-column">
-                <img class="demo cursor" src="imgs/slider landscape imgs/sub bar/Houseeeee.png" style="width:100%" onclick="currentSlide(4)" alt="Fantasy Forest">
-                </div>
-                <div class="landscape-gallery-column">
-                <img class="demo cursor" src="imgs/slider landscape imgs/sub bar/moountains.png" style="width:100%" onclick="currentSlide(5)" alt="Corrupted Forest">
-                </div>    
-                <div class="landscape-gallery-column">
-                <img class="demo cursor" src="imgs/slider landscape imgs/abandoned city 2.png" style="width:100%" onclick="currentSlide(6)" alt="Abandoned House">
-                </div>
-          </div>
-
-          
+            </div>
         </div>
+
     </section>
+    <!--<section class = "characters-slideshow">
 
-    <section class="characters-gallery" id = "characters-gallery">
-        <div class="characters-gallery-row">
-            <div class="characters-gallery-column">
-              <img src="imgs/slider characters imgs/bai ganio111.jpg" style="height:200px" alt="#" onclick="myFunction(this);">
-            </div>
-            <div class="characters-gallery-column">
-              <img src="imgs/slider characters imgs/concept art11.jpg" style="height:200px" alt="#" onclick="myFunction(this);">
-            </div>
-            <div class="characters-gallery-column">
-              <img src="imgs/slider characters imgs/dasdasdasd1.jpg" style="height:200px" alt="#" onclick="myFunction(this);">
-            </div>
-            <div class="characters-gallery-column">
-              <img src="imgs/slider characters imgs/conceptart hunter.jpg" style="height:200px" alt="#" onclick="myFunction(this);">
-            </div>
-            <div class="characters-gallery-column">
-                <img src="imgs/slider characters imgs/druidd2.jpg" style="height:200px" alt="#" onclick="myFunction(this);">
-            </div>
-            <div class="characters-gallery-column">
-                <img src="imgs/slider characters imgs/Kolyu.jpg" style="height:200px" alt="#" onclick="myFunction(this);">
-            </div>
-            <div class="characters-gallery-column">
-                <img src="imgs/slider characters imgs/monster concept1.jpg" style="height:200px" alt="#" onclick="myFunction(this);">
-            </div>
-            <div class="characters-gallery-column">
-                <img src="imgs/slider characters imgs/rasputin.jpg" style="height:200px" alt="#" onclick="myFunction(this);">
-            </div>
-            <div class="characters-gallery-column">
-                <img src="imgs/slider characters imgs/druid remaked.jpg" style="height:200px" alt="#" onclick="myFunction(this);">
-            </div>
-            <div class="characters-gallery-column">
-                <img src="imgs/slider characters imgs/jeko.jpg" style="height:200px" alt="#" onclick="myFunction(this);">
-            </div>
-            <div class="characters-gallery-column">
-                <img src="imgs/slider characters imgs/dsds11.jpg" style="height:200px" alt="#" onclick="myFunction(this);">
-            </div>          
-            <div class="characters-gallery-column">
-                <img src="imgs/slider characters imgs/pelasgo ogluddd.jpg" style="height:200px" alt="#" onclick="myFunction(this);">
-            </div>          
-          </div>
-          
-          <!-- container for expanding image -->
-          <div class="characters-gallery-container">
-            <!-- closing the image -->
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-          
-            <!-- expanded image -->
-            <img id="expandedImg" style="width:100%">
-          
-            <!-- image text -->
-            <div id="imgtext"></div>
-          </div>
-    </section>
 
-<script>
-    //SLIDE
-var slideIndex = 1;
-showSlides(slideIndex);
+    </section>-->
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-    //SLIDE
-
-    //GALLERY
-    function myFunction(imgs) {
-  // Get the expanded image
-  var expandImg = document.getElementById("expandedImg");
-  // Get the image text
-  var imgText = document.getElementById("imgtext");
-  // Use the same src in the expanded image as the image being clicked on from the grid
-  expandImg.src = imgs.src;
-  // Use the value of the alt attribute of the clickable image as text inside the expanded image
-  imgText.innerHTML = imgs.alt;
-  // Show the container element (hidden with CSS)
-  expandImg.parentElement.style.display = "block";
-    } 
-
-    //GALLERY
-</script>
 </body>
-
-
 
 
 </html>

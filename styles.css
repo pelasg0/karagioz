@@ -22,30 +22,24 @@
 nav ul 
 {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
-    background-color: rgb(0, 0, 0);
+    background-color:rgb(22, 22, 22);
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
-    opacity: 0.6;
-    transition: 0.6s;
-    
 }
-nav ul:hover
-{
-    opacity:1;
-    padding-top: 5px;
-    
-}
+
   
 nav ul li 
 {
     float: left;
 }
-  
+
+ul img
+{
+    float: left;
+}
 nav ul li a 
 {
     display: block;
@@ -53,14 +47,10 @@ nav ul li a
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    transition: 0.5s;
-    
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
 }
-  
-nav ul li a:hover
-{
-    transform: scale(1.1);
-}
+
   
 /*nav bar*/
 
@@ -74,10 +64,12 @@ section
 /*banner*/
 .banner 
 {
+    background-color:rgb(22, 22, 22);
     position:relative;
     width: 100%;
     min-height: 100vh;
 }
+
 .banner .imgSidebar
 {
     position:absolute;
@@ -125,19 +117,20 @@ section
 .banner .contentBx h4 
 {
     font-size: 1.5em;
-    color: #333;
+    color: #fff;
     font-weight: 300;
 }
 
 .banner .contentBx h2 
 {
     font-size: 3em;
-    color: #333;
+    color: #fff;
     line-height: 1em;
 }
 
 p
 {
+    color: #fff;
     font-size: 1.1em;
     margin: 20px 0;
     font-weight: 300;
@@ -148,7 +141,8 @@ p
 /*button*/
 .btn 
 {
-    background-color: rgb(0, 0, 0);
+    border: 1px solid #fff;
+    border-radius: 100px;
     color: #fff;
     padding: 10px 30px;
     display: inline-block;
@@ -159,7 +153,8 @@ p
 }
 .btn:hover 
 {
-    background-color: #333;
+    background-color: #fff;
+    color:rgb(22, 22, 22);
 }
 /*button*/
 
@@ -211,7 +206,7 @@ p
 {
     background-color:rgb(22, 22, 22);
 }
-.about .content
+.about .content-about
 {
     display:flex;
     justify-content: space-evenly;  
@@ -254,9 +249,7 @@ p
 .imgBx
 {   
     height: 200px;
-    width: 200px;
-    border: 2px solid #fff;
-    
+    width: 200px;   
 }
 .imgBx img 
 {
@@ -264,7 +257,7 @@ p
     width:100%; 
 }
 
-.Details h1 
+.details-about h1 
 {
     font-size: 1.5em;
     font-weight: 400;
@@ -273,7 +266,7 @@ p
 }
 
 
-.Details li
+.details-about li
 {
     list-style-type: none;
     font-size: 1.5em;
@@ -282,12 +275,12 @@ p
     color: #fff;
 }
 
-.content 
+.content-about
 {
     padding-top: 100px;
 }
 
-.Details li span 
+.details-about li span 
 {
     font-size: 1.7em;
     font-weight: 500;
@@ -309,349 +302,219 @@ p
 /*skills*/
 .skills 
 {
+    background-color: rgb(22, 22, 22);
+
+}
+
+.inner-skills
+{
+    padding-top: 20px;
+}
+
+.container-skills 
+{
     display: grid;
-    height: 100%;
-    place-items: center;
-    background-color: rgb(22, 22, 22);
-    background-size: 100%;
-    background-position: center;
-
-}
-
-.skills-bar 
-{
-    width: 600px;
-    background: #fff;
-    border-radius: 10px;
-    padding: 25px 30px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-}
-
-.skills-bar .bar 
-{
-    margin: 20px 0;
-}
-
-.skills-bar .bar:first-child
-{
-    margin-top: 0px;
-}
-.skills-bar .bar .info
-{
-    margin-bottom: 5px;
-}
-.skills-bar .bar .info span 
-{
-    font-size: 1.1em;
-    font-weight: 500;
-}
-
-.skills-bar .bar .progress-line
-{
-    position: relative;
-    height: 10px;
-    width: 100%;
-    background: #f0f0f0;  
-    border-radius: 10px;
-}
-.bar .progress-line span 
-{
-    height: 100%;
-    width: 80%;
-    background: #333;
-    position: absolute;
-    border-radius: 10px;
-}
-
-.progress-line.html span
-{
-    width: 70%;
-}
-.progress-line.css span
-{
-    width: 40%;
-}
-.progress-line.cs span
-{
-    width: 30%;
-}
-.progress-line.ps span
-{
-    width: 80%;
-}
-.progress-line.bl span
-{
-    width: 30%;
-}
-.progress-line.il span
-{
-    width: 50%;
-}
-.progress-line.js span
-{
-    width: 30%;
-}
-
-
-.bar .progress-line span::before /*small black pointer*/
-{
-    position: absolute;
-    content: "";
-    right: 0;
-    top: -10px;
-    height: 0;
-    width: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0px;
-    border-right-width: 0px;
-    border-top-color: #000;
-}
-.bar .progress-line span::after /*background num*/
-{
-    position: absolute;
-    right: 0;
-    top: -24px;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 500;
-    background: #000;
-    padding: 1px 8px;
-    border-radius: 3px;
-   
-}
-
-.progress-line.html span::after
-{
-    content:"70%";
-}
-.progress-line.css span::after
-{
-    content:"40%";
-}
-.progress-line.cs span::after
-{
-    content:"30%";
-}
-.progress-line.ps span::after
-{
-    content:"80%";
-}
-.progress-line.bl span::after
-{
-    content:"30%";
-}
-.progress-line.il span::after
-{
-    content:"50%";
-}
-.progress-line.js span::after
-{
-    content:"30%";
-}
-
-/*GALLERY*/
-
-.landscape-gallery
-{
-    background-color: rgb(22, 22, 22);
-}
-.landscape-gallery img 
-{
-    vertical-align: middle;
-}
-  
-  /* Position the image container (needed to position the left and right arrows) */
-.landscape-gallery-container
-{
-    position: relative;
-}
-  
-  /* Hide the images by default */
-.mySlides 
-{
-    display: none;
-}
-  
-  /* Add a pointer when hovering over the thumbnail images */
-.cursor 
-{
-    cursor: pointer;
-}
-  
-  /* Next & previous buttons */
-.prev,
-.next 
-{
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-  
-  /* Position the "next button" to the right */
-.next 
-{
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-  
-  /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover 
-{
-    background-color: rgba(0, 0, 0, 0.8);
-}
-  
-  /* Number text (1/3 etc) */
-.numbertext 
-{
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-  
-  /* Container for image text */
-.caption-container 
-{
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    background-color: rgb(22, 22, 22);
-    padding: 2px 16px;
-    color: white;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
 }
-  
-.landscape-gallery-row:after 
+.box-skill
 {
-    content: "";
-    display: table;
-    clear: both;
-}
-  
-  /* Six columns side by side */
-.landscape-gallery-column 
-{
-    float: left;
-    width: 16.66%;
-}
-  
-  /* Add a transparency effect for thumnbail images */
-.demo 
-{
-    opacity: 0.6;
-}
-  
-.active,
-.demo:hover 
-{
-    opacity: 1;
-}
-
-/*GALLERY*/
-
-
-
-
-/*character gallery*/
-.characters-gallery
-{
-    background-color: rgb(22, 22, 22);
-}
-.characters-gallery-column 
-{
-    float: left;
-    width: 25%;
-    padding: 10px;
-}
-  
-/* Style the images inside the grid */
-.characters-gallery-column img 
-{
-    opacity: 0.8;
+    padding: 1rem;
+    color: #ddd;
     cursor: pointer;
 }
-  
-.characters-gallery-column img:hover 
+
+.title-skill
 {
-    opacity: 1;
-}
-  
-/* Clear floats after the columns */
-.characters-gallery-row:after 
-{
-    content: "";
-    display: table;
-    clear: both;
-}
-  
-/* The expanding image container (positioning is needed to position the close button and the text) */
-.characters-gallery-container 
-{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
     position: relative;
+}
+.title-skill:after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 20px;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #fff;
+    transition: .5s;
+
+}
+.title-skill:before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20px;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #fff;
+    transition: .5s;
+    
+}
+.title-skill h3
+{
+    color: #fff;
+    margin-top: 0.5rem;
+}
+.icon-skill
+{
+    width: 50px;
+}
+.img-skill img 
+{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border: 1px solid #fff;
+    border-radius: 45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.img-skill img:hover
+{
+    background-color:#fff;
+    transform: scale(1.2);
+}
+
+
+/*Landscapes Slideshow*/
+.landscape-slideshow
+{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(22, 22, 22);
+}
+.landscape-slider
+{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.landscape-slides
+{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.landscape-slides input 
+{
     display: none;
 }
-  
-/* Expanding image text */
-#imgtext 
+.landscape-slide
 {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: white;
-    font-size: 20px;
+    width: 20%;
+    transition: 2s;
 }
-  
-/* Closable button inside the image */
-.closebtn 
+.landscape-slide img 
+{
+    width: 850px;
+    height: 400px;
+}
+.landscape-navigation-manual
 {
     position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.landscape-manual-btn
+{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
     cursor: pointer;
+    transition: 1s;
+}
+.landscape-manual-btn:not(:last-child)
+{
+    margin-right: 40px;
+}
+.landscape-manual-btn:hover
+{
+    background-color: #fff;
 }
 
-/*character gallery*/
+#landscape-radio1:checked ~ .first
+{
+    margin-left: 0;
+}
+#landscape-radio2:checked ~ .first
+{
+    margin-left: -20%;
+}
+
+#landscape-radio3:checked ~ .first
+{
+    margin-left: -40%;
+}
+
+.landscape-navigation-auto
+{
+    position: absolute;
+    display: none;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+.landscape-navigation-auto div 
+{
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: 1s;
+}
+.landscape-navigation-auto div:not(:last-child)
+{
+    margin-right: 40px;
+}
+#landscape-radio1:checked ~ .landscape-navigation-auto .landscape-auto-btn1
+{
+    background: #fff;
+}
+#landscape-radio2:checked ~ .landscape-navigation-auto .landscape-auto-btn2
+{
+    background: #fff;
+}
+#landscape-radio3:checked ~ .landscape-navigation-auto .landscape-auto-btn3
+{
+    background: #fff;
+}
+
+/*Landscapes Slideshow*/
+/*Characters Slideshow*/
+/*Characters Slideshow*/
+
 
 /*media*/
 
-
-@media (max-width: 1500px)
-{
-    .characters-gallery-row
-    {
-        display: grid;
-        grid-template-columns: auto auto auto;
-       
-    }
-  
-
-}
-
-@media (max-width: 1040px)
-{
-    .characters-gallery-row
-    {
-        display: grid;
-        grid-template-columns: auto auto;   
-    }
-    .characters-gallery
-    {
-        
-        height: 200em;
-    }
-}
 @media (max-width: 991px)
 {
+    section 
+    {
+        height: auto;
+    }
     nav ul li a
     {
         font-size: 30px;
@@ -704,11 +567,6 @@ p
     {
         text-align: center;
     }
-    section 
-    {
-        height: 55em;
-        padding: 40px;
-    }
     .about .content .textBx
     {
         min-width: 100%;
@@ -719,43 +577,38 @@ p
         flex-direction: column;
         margin-top: 0;
     }
-    .about .content .imgBx
-    {   
-        margin-left: 0;
-        transform: scale(0.6);
+    .details-about li span 
+    {
+        display: none;
     }
-    .skills-bar
+    .imgBx img
+    {   
+        display: none;
+    }
+    .container-skills
+    {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }
+    .landscape-slider img
     {
         width: 100%;
-        
-    }
-    .landscape-gallery
-    {
-        padding: 0.1em;
-       
-    }
-}
-@media (max-width: 736px)
-{
-    .characters-gallery-row
-    {
-        display: grid;
-        grid-template-columns: auto;   
-    }
-}
-@media (max-width: 400px)
-{
-    .characters-gallery-column
-    {
-        width: auto;
         height: auto;
     }
-    .characters-gallery-column img
+    .landscape-navigation-manual
     {
         width: 100%;
-        height: 100%;
     }
 }
+
+@media (max-width: 650px)
+{
+    .container-skills
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 
 /*media*/
