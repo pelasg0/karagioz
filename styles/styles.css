@@ -518,7 +518,7 @@ p
 }
 .gallery-container img
 {
-    height: 35vh;
+    width: 20vw;
     opacity: 0.7;
     transition: 0.5s;
 }
