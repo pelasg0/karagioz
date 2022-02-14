@@ -581,7 +581,7 @@ p
         grid-template-columns: auto auto; 
     }
 }
-@media (max-width: 1026px)
+@media (max-width: 900px)
 {
     section 
     {
@@ -686,6 +686,17 @@ p
     }
 }
 
+@media (max-width: 650px)
+{
+    .container-skills
+    {
+        grid-template-columns: 1fr;
+    }
+    .gallery-container
+    {
+        grid-template-columns: auto; 
+    }
+}
 @media (max-width: 650px)
 {
     .container-skills
