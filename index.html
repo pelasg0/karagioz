@@ -6,22 +6,25 @@
     <title> CNM's Website </title>
     <link rel= "stylesheet" href="styles/styles.css"> 
     <link rel= "stylesheet" href="styles/lightbox.min.css"> 
-    <script src="scripts/scripts.js"></script>
-    <script src="scripts/lightbox-plus-jquery.min.js"></script>
 </head>
 <body>
     <!--<div class="toggle" onclick="toggleMenu();"></div>                  BUTTON
-    -->            
-    <nav> 
-    <ul class="navigation">
-        <img src="imgs/toggleicons/logo1.png" height="40vh">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#landscape-slideshow">Slider</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-      </ul>
-    </nav>      
+    -->  
+    <header class = "primary-header flex">
+        <div>
+            <img src="imgs/toggleicons/logo1.png" class = "logo">
+        </div>     
+        <button class = "mobile-nav-toggle" aria-controls = "primary-navigation" aria-expanded = "false"><span class = "sr-only"></span></button>     
+        <nav> 
+            <ul class="primary-navigation flex" data-visible="false" id="primary-navigation">
+                <li><a href="#home"><span aria-hidden="true"></span>Home</a></li>
+                <li><a href="#about"><span aria-hidden="true"></span>About</a></li>
+                <li><a href="#skills"><span aria-hidden="true"></span>Skills</a></li>
+                <li><a href="#landscape-slideshow"><span aria-hidden="true"></span>Slider</a></li>
+                <li><a href="#gallery"><span aria-hidden="true"></span>Gallery</a></li>
+            </ul>   
+        </nav>   
+    </header>   
     <section class="banner" id="home">
         <div class="imgSidebar">
             <img src="imgs/avatarbox/tim-mossholder-kD70xb1pUdg-unsplash-min.jpg">
@@ -224,6 +227,8 @@
 
     </section>-->
 
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/lightbox-plus-jquery.min.js"></script>
 </body>
 
 
