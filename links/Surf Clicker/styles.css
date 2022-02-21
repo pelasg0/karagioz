@@ -1,0 +1,83 @@
+@keyframes pulsate
+{
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=VT323&display=swap');
+body
+{
+    font-family: 'VT323', monospace;
+    font-size: 1.6em;
+    background-image: url("imgs/back2.jpg");
+    
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    
+}
+.animation
+{
+    animation-name: pulsate;
+    animation-duration: 0.3s;
+}
+
+#clicksImg
+{
+    height: 300px;
+    opacity: 0.7;
+}
+#autoClicksImg
+{
+    height: 30px;
+}
+#upgradedCPUImg
+{
+    height: 30px;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+input
+{
+    text-align: center;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+    width: auto;
+    font-size: 1.5em;
+}
+#clicker button
+{
+    border:none;
+    font-family: 'VT323', monospace;
+    font-size: 1.1em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background-color: rgba(0, 0, 0, 0);
+}
+#upgrades button
+{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+a
+{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+}
+#wholeClickerSection
+{
+    display: flex;
+    
+}
+#clicker
+{
+    padding-left: 2vw;
+    padding-right: 5vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#upgrades
+{
+    padding: 10vw
+}

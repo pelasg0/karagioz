@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Surf Clicker</title>
+</head>
+<body>
+    <div id="wholeClickerSection">
+        <div id="clicker">
+            <p><span id="clicksAmount"></span></p>
+            <br><br>
+            <p id="surfsPerSecond">You are gaining 0 Surfs per/s</p>
+            <a href=# onclick="clickThis()"><img id="clicksImg" onclick="ani()" src="imgs/webLogoTransperentPixel2.png"></a>
+            <br><br>
+            <button><a href=# onclick="saveClicks()">Save</a></button>
+            <button><a href=# onclick="loadClicks()">Load</a></button>
+            <button><a href=# onclick="resetClicks()">Reset</a></button>
+        </div>
+            <br>
+        <div id="upgrades">
+            <p>Buy а Bot</p>
+            <button><a href=# onclick="buyAutoClick()"><img id="autoClicksImg" src="imgs/clicker.png"></a></button>
+            <p id="costAutoClick">12 Surfs</p>
+            <p id="amountAutoClicks">You Own 0 Bots.</p>
+            <br>
+            <p>Upgrade CPU</p>
+            <button><a href=# onclick="upgradeCPU()"><img id="upgradedCPUImg" src="imgs/prozessor.png"></a></button>
+            <p id="costUpgradedCPU">15 Surfs</p>
+            <p id="amountUpgradesCPU">You Upgraded CPU 0 Times</p>
+        </div>
+        <div id="message">
+            <p id="innerMessage"></p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
