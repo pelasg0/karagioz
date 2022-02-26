@@ -4,13 +4,21 @@
     50% {transform: scale(1.1);}
     100% {transform: scale(1);}
 }
+@keyframes cursor-blink 
+{
+    0% {
+      opacity: 0;
+    }
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=VT323&display=swap');
 body
 {
+    padding: 0;
+    margin: 0;
     font-family: 'VT323', monospace;
     font-size: 1.6em;
-    background-image: url("imgs/back2.jpg");
-    
+    /*background-image: url("imgs/back2.jpg");*/
+    background-image: url("imgs/background/1e759c_e882622b912c42c7853ccf329b40513e~mv2.gif");
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     color: white;
     
@@ -23,8 +31,17 @@ body
 
 #clicksImg
 {
-    height: 300px;
-    opacity: 0.7;
+    height: 250px;
+    opacity: 0.9;
+    transition: 0.5s;
+}
+#clicksImg:hover
+{
+    transform: scale(1.1);
+}
+#clickerContent
+{
+    padding: 50px;
 }
 #autoClicksImg
 {
@@ -39,6 +56,10 @@ a
     text-decoration: none;
     color: black;
 }
+#clicker
+{
+    z-index: 200;
+}
 input
 {
     text-align: center;
@@ -48,6 +69,18 @@ input
     color: white;
     width: auto;
     font-size: 1.5em;
+}
+#cursosBl::after
+{
+    content: "";
+    width: 3px;
+    height: 15px;
+    background: black;
+    display: inline-block;
+    z-index: 100;
+    animation: cursor-blink 1.5s steps(2) infinite;
+    margin-left: 148px;
+    margin-top: 148px; 
 }
 #clicker button
 {
@@ -61,6 +94,16 @@ input
 {
     background-color: rgba(255, 255, 255, 0.5);
 }
+#upgradesBg
+{
+    height: 100vh;
+    width: 20vw;
+    background-color: rgba(10, 10, 10, 0.6);
+}
+#upgradesContent
+{
+    padding: 50px;
+}
 a
 {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -68,16 +111,37 @@ a
 }
 #wholeClickerSection
 {
-    display: flex;
+   display: flex;
+   gap: 50px;
     
 }
-#clicker
+
+
+#desktopWindow
 {
-    padding-left: 2vw;
-    padding-right: 5vh;
-    background-color: rgba(0, 0, 0, 0.4);
+    width: 600px;
+    height: 280px;
+    background-image: url(imgs/browsers/Unbenannt1.jpg);
+    background-size: cover;
+    margin-top: 200px;
+    opacity: 1;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+#clicker
+{ 
 }
 #upgrades
 {
-    padding: 10vw
+}
+#message
+{
+    width: 500px;
+    margin-left: 50px;
+}
+#clickerBg
+{
+    height: 100vh;
+    width: 25vw;
+    background-color: rgba(10, 10, 10, 0.6);
 }

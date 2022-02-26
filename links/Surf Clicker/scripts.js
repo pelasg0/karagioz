@@ -16,6 +16,7 @@ function update()
 
     document.getElementById("surfsPerSecond").innerHTML = "You are gaining " + (((autoClicksCount)+(upgradedCPUs*2))*multiplier) + " Surfs per/s";
     getMessage();
+    changeBg();
 }
 function clickThis()
 {
@@ -119,4 +120,20 @@ function getMessage()
     {
         document.getElementById("innerMessage").innerHTML = mess3;
     }
+}
+function changeBg()
+{
+    if(clicksCount > 30)
+    {
+        document.getElementById("desktopWindow").style.backgroundImage = "url(imgs/back1.png)"; 
+    }
+}
+function createNumberOnClick()
+{
+    let clicker;
+
+    let element = document.createElement("div");
+    element.textContent = "+" + clicksCount;
+    element.classList.add("number","unselected");
+    clicker.appendChild(element);
 }

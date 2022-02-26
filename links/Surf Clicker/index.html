@@ -13,29 +13,44 @@
 <body>
     <div id="wholeClickerSection">
         <div id="clicker">
-            <p><span id="clicksAmount"></span></p>
-            <br><br>
-            <p id="surfsPerSecond">You are gaining 0 Surfs per/s</p>
-            <a href=# onclick="clickThis()"><img id="clicksImg" onclick="ani()" src="imgs/webLogoTransperentPixel2.png"></a>
-            <br><br>
-            <button><a href=# onclick="saveClicks()">Save</a></button>
-            <button><a href=# onclick="loadClicks()">Load</a></button>
-            <button><a href=# onclick="resetClicks()">Reset</a></button>
+                <div id="clickerBg">
+                    <div id="clickerContent">
+                        <p><span id="clicksAmount"></span></p>
+                        <br><br>
+                        <p id="surfsPerSecond">You are gaining 0 Surfs per/s</p>
+                        <a href=# onclick="clickThis()" onclick="createNumberOnClick(this)"><img id="clicksImg" onclick="ani()" src="imgs/webLogoTransperentPixel2.png"></a>
+                        <br><br>
+                        <button><a href=# onclick="saveClicks()">Save</a></button>
+                        <button><a href=# onclick="loadClicks()">Load</a></button>
+                        <button><a href=# onclick="resetClicks()">Reset</a></button>
+                    </div>
+                </div>
         </div>
             <br>
+        <div id="desktop">
+            <div id="message">
+                <p id="innerMessage">Your money making web journey hast just started.</p>
+            </div>      
+            <div id="desktopWindow">
+                <div id="cursosBl">
+                    
+                </div>
+            </div>
+        </div>
         <div id="upgrades">
-            <p>Buy а Bot</p>
-            <button><a href=# onclick="buyAutoClick()"><img id="autoClicksImg" src="imgs/clicker.png"></a></button>
-            <p id="costAutoClick">12 Surfs</p>
-            <p id="amountAutoClicks">You Own 0 Bots.</p>
-            <br>
-            <p>Upgrade CPU</p>
-            <button><a href=# onclick="upgradeCPU()"><img id="upgradedCPUImg" src="imgs/prozessor.png"></a></button>
-            <p id="costUpgradedCPU">15 Surfs</p>
-            <p id="amountUpgradesCPU">You Upgraded CPU 0 Times</p>
-        </div>
-        <div id="message">
-            <p id="innerMessage"></p>
+            <div id="upgradesBg">
+                <div id="upgradesContent">
+                    <p>Buy а Bot</p>
+                    <button><a href=# onclick="buyAutoClick()"><img id="autoClicksImg" src="imgs/clicker.png"></a></button>
+                    <p id="costAutoClick">12 Surfs</p>
+                    <p id="amountAutoClicks">You Own 0 Bots.</p>
+                    <br>
+                    <p>Upgrade CPU</p>
+                    <button><a href=# onclick="upgradeCPU()"><img id="upgradedCPUImg" src="imgs/prozessor.png"></a></button>
+                    <p id="costUpgradedCPU">15 Surfs</p>
+                    <p id="amountUpgradesCPU">You Upgraded CPU 0 Times</p>
+                </div>
+            </div>
         </div>
     </div>
     <script src="scripts.js"></script>
