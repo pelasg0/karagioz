@@ -47,8 +47,9 @@
     padding-inline: clamp(3rem, 10vw, 10rem);
     --gap: 2em;
     position: fixed;
-    inset: 0 0 0 30%;
-   
+    inset: 0 0 0 30%;   
+    background: rgb(20, 20, 20, 20%);
+    backdrop-filter: blur(2rem);  
     flex-direction: column;
     z-index: 1000;
     padding: min(30vh, 10rem) 2em;
@@ -93,8 +94,8 @@
 {
     .primary-navigation
     {
-        background: hsl(0 0% 40% / 0.1);
-        backdrop-filter: blur(2rem);
+        background: rgb(20, 20, 20, 20%);
+        backdrop-filter: blur(2rem);  
     }
 }
 /*nav bar*/
@@ -557,13 +558,13 @@ p
 .gallery-container
 {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     gap: 10px;   
 }
 .gallery-container img
 {
     width: 20vw;
-    opacity: 0.7;
+    opacity: 0.5;
     transition: 0.5s;
 }
 .gallery-container img:hover
@@ -571,6 +572,18 @@ p
     opacity: 1;
 }
 /*Gallery*/
+/*ProjectsSection*/
+
+.projects
+{
+    background-color: rgb(22, 22, 22);
+}
+.projects a   
+{
+    color: #fff;
+    
+}
+/*ProjectsSection*/
 
 
 /*media*/

@@ -18,11 +18,16 @@
                         <p><span id="clicksAmount"></span></p>
                         <br><br>
                         <p id="surfsPerSecond">You are gaining 0 Surfs per/s</p>
-                        <a href=# onclick="clickThis()" onclick="createNumberOnClick(this)"><img id="clicksImg" onclick="ani()" src="imgs/webLogoTransperentPixel2.png"></a>
+                        <a href=# onclick="clickThis()"><img id="clicksImg" src="imgs/webLogoTransperentPixel2.png"></a>
+                        <p id="first-number"></p>
+                        <p id="second-number"></p>
+                        <p id="third-number"></p>
                         <br><br>
-                        <button><a href=# onclick="saveClicks()">Save</a></button>
-                        <button><a href=# onclick="loadClicks()">Load</a></button>
-                        <button><a href=# onclick="resetClicks()">Reset</a></button>
+                        <div id="save-click-reset-Buttons">
+                            <button><a href=# onclick="saveClicks()">Save</a></button>
+                            <button><a href=# onclick="loadClicks()">Load</a></button>
+                            <button><a href=# onclick="resetClicks()">Reset</a></button>
+                        </div>
                     </div>
                 </div>
         </div>
@@ -49,6 +54,10 @@
                     <button><a href=# onclick="upgradeCPU()"><img id="upgradedCPUImg" src="imgs/prozessor.png"></a></button>
                     <p id="costUpgradedCPU">15 Surfs</p>
                     <p id="amountUpgradesCPU">You Upgraded CPU 0 Times</p>
+                    <p>Buy PC</p>
+                    <button><a href=# onclick="buyPC()"><img id="broughtPCImg" src="imgs/pc-screen.png"></a></button>
+                    <p id="costBroughtPC">15 Surfs</p>
+                    <p id="amountBroughtPCs">You brought 0 PCs</p>
                 </div>
             </div>
         </div>
