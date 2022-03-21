@@ -145,9 +145,9 @@ function buyPC()
 }
 function getMessage()
 {
-    let mess1 = "Now you are starting your web adventure.";
-    let mess2 = "Jeez you are way too fast top!! ";
-    let mess3 = "Motherfucker you are breaking the browsасдsdalksdkaslöАХХДАС!!!?!??ДАСЛДК:А110010101001";
+    let mess1 = "Nice to meet you, I am your bot-friend (｡◕‿◕｡)";
+    let mess2 = "You are starting your surfing journey pretty well ಠ‿ಠ";
+    let mess3 = "Got the hand of it didn't you (╬ ಠ益ಠ)";
     let mess4 = "1010100101010000111...101010101010011";
     let mess5 = "Алмосt killed me you motherfucker";
     let mess6 = "YOU ARE ALREADY THERE ???!";
@@ -189,27 +189,27 @@ function changeBg()
 {
     if(clicksCount < 30)
     {
-        document.getElementById("desktopWindow").style.backgroundImage = "url(imgs/browsers/Unbenannt1.jpg)"; 
+        document.getElementById("desktopWindow").style.backgroundImage = "url(imgs/browsers/Unbenannt1.gif)"; 
     }
     else if(clicksCount < 50)
     {
-        document.getElementById("desktopWindow").style.backgroundImage = "url(imgs/browsers/Unbenannt2.jpg)"; 
+        document.getElementById("desktopWindow").style.backgroundImage = "url(imgs/browsers/Unbenannt2.gif)"; 
     }
     else if(clicksCount < 60)
     {
-        document.getElementById("desktopWindow").style.backgroundImage = "url(imgs/browsers/Unbenannt3.jpg)"; 
+        document.getElementById("desktopWindow").style.backgroundImage = "url(imgs/browsers/Unbenannt3.gif)"; 
     }
     else if(clicksCount < 70)
     {
-        document.getElementById("desktopWindow").style.backgroundImage = "url(imgs/browsers/Unbenannt4.jpg)"; 
+        document.getElementById("desktopWindow").style.backgroundImage = "url(imgs/browsers/Unbenannt4.gif)"; 
     }
     else if(clicksCount < 80)
     {
-        document.getElementById("desktopWindow").style.backgroundImage = "url(imgs/browsers/Unbenannt5.jpg)"; 
+        document.getElementById("desktopWindow").style.backgroundImage = "url(imgs/browsers/Unbenannt5.gif)"; 
     }
     else if(clicksCount < 90)
     {
-        document.getElementById("desktopWindow").style.backgroundImage = "url(imgs/browsers/Unbenannt6.jpg)"; 
+        document.getElementById("desktopWindow").style.backgroundImage = "url(imgs/browsers/Unbenannt7.jpg)"; 
     }
     else if(clicksCount < 100)
     {
