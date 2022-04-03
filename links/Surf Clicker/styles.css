@@ -53,7 +53,7 @@ a
 #wholeClickerSection
 {
     display: flex;
-    gap: 50px;   
+    
 }
 #clickerBg
 {
@@ -66,9 +66,21 @@ a
 {
     background-color: rgba(150, 150, 150, 0.2);
 }*/
+#clicksAmount
+{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+#surfsPerSecond
+{
+    font-size: 1em;
+    width: 10vw;
+    height: 5vh;
+}
 #clicksImg
 {
-    margin-top: 100px;
+    margin-bottom: 100px;
     width: 15vw;
     opacity: 1;
     transition: 0.5s;
@@ -79,7 +91,15 @@ a
 }
 #clickerContent
 {
-    padding: 50px;
+    padding: 30px;
+}
+button
+{
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    height: 50px;
+    width: 50px;
+    padding: 2px;
 }
 #clicker button
 {
@@ -101,11 +121,11 @@ a
 }
 #first-number
 {
-    font-size: 1.5em;
+    font-size: 2em;
     position: absolute;
     opacity: 0;
-    top: 500px;
-    left: 300px;
+    top: 200px;
+    left: 14vw;
 }
 #second-number
 {
@@ -114,13 +134,18 @@ a
 
 #save-click-reset-Buttons
 {
-    width: 10vw;
-    position: absolute;
-    bottom: 100px;
+    width: 13vw;
+    position: relative;
 
 }
 /*clicker-section*/
 
+
+#upgrades-buildings-section
+{
+    display: flex;
+    gap: 0;
+}
 /*upgrades-section*/
 input
 {
@@ -134,11 +159,66 @@ input
 }
 #upgrades
 {
-    float: right;
+    display: flex;
+    flex-direction: row;
     height: auto;
-    width: 25vw;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-left: 5px solid rgba(0,0,0);
+    width: 16vw;
+    border: 5px solid rgba(0, 0, 0, 0.4);
+    padding: 10px;
+}
+#buildings
+{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 16vw;
+    border: 5px solid rgba(0, 0, 0, 0.4);
+    padding: 10px;
+}
+#cost-amount-AutoClicks
+{
+    display: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    position: absolute;
+    width: 13vw;
+    height: auto;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+a:hover + #cost-amount-AutoClicks
+{
+    display: block;
+}
+#cost-amount-UpgradedCPU
+{
+    display: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    position: absolute;
+    width: 13vw;
+    height: auto;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+a:hover + #cost-amount-UpgradedCPU
+{
+    display: block;
+}
+#cost-amount-BroughtPC
+{
+    display: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    position: absolute;
+    width: 13vw;
+    height: auto;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+a:hover + #cost-amount-BroughtPC
+{
+    display: block;
 }
 #upgradesBg
 {
@@ -149,22 +229,19 @@ input
 {
 
 }
-#upgradesContent
-{
-    padding: 50px;
-}
+
 
 #autoClicksImg
 {
-    height: 30px;
+    height: 40px;
 }
 #upgradedCPUImg
 {
-    height: 30px;
+    height: 40px;
 }
 #broughtPCImg
 {
-    height: 30px; 
+    height: 40px;
 }
 
 /*updates-section*/
@@ -173,15 +250,15 @@ input
 
 #desktopWindow
 {
+    margin-top: 10vh;
+    position: relative;
     border: 2px solid black;
     width: 35vw;
-    height: 250px;
+    height: 30vh;
     background-image: url(imgs/browsers/Unbenannt1.gif);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin-top: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;   
     opacity: 1;
-    margin-right: 100px;
     transition: 0.5s;
     background-color: #fff;
 }
@@ -194,15 +271,24 @@ input
 #city
 {
     border: 2px solid black;
-    margin-top: 100px;
+    margin-top: 10vh;
     width: 20vw;
-    height: 150px;
-    background-image: url(imgs/background/city/city.gif);
-    background-size: 100%;
-    float: right;
+    height: 17vh;
+    background-image: url(imgs/background/city/city2.gif);
+    background-size: cover;
     background-repeat: no-repeat;
 }
 /*city/*
+
+/*achievement*/
+
+#achievement-container
+{
+    display: none;
+}
+
+
+/*achievement*/
 
 /*message*/
 
@@ -215,6 +301,6 @@ input
     height: 50px;
     width: 30vw;
     margin-left: 50px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 /*message*/

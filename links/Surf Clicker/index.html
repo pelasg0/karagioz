@@ -15,13 +15,10 @@
         <div id="clicker">
                 <div id="clickerBg">
                     <div id="clickerContent">
-                        <p><span id="clicksAmount">You got 0 Surfs</span></p>
+                        <p><span id="clicksAmount">0 Info<p id="surfsPerSecond">(0 Info per/s)</p></span></p>
                         <br><br>
-                        <p id="surfsPerSecond">You are gaining 0 Surfs per/s</p>
                         <a href=# onclick="clickThis()"><img id="clicksImg" src="imgs/clickImg/webLogo.png"></a>
                         <p id="first-number"></p>
-                        <p id="second-number"></p>
-                        <p id="third-number"></p>
                         <br><br>
                         <div id="save-click-reset-Buttons">
                             <button><a href=# onclick="saveClicks()">Save</a></button>
@@ -44,26 +41,56 @@
             <div id="city">
 
             </div>
+            <div id="mp3-player-section">
+                <h3>Music Player</h3>
+                <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1035841942&color=%23040404&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/lofi_girl" title="Lofi Girl" target="_blank" style="color: #cccccc; text-decoration: none;">Lofi Girl</a> · <a href="https://soundcloud.com/lofi_girl/4-am-studysession" title="4 A.M Study Session 📚 - [lofi hip hop/chill beats]" target="_blank" style="color: #cccccc; text-decoration: none;">4 A.M Study Session 📚 - [lofi hip hop/chill beats]</a></div>
+            </div>
+            <!--<div id="achievement-container">
+                <p id="achi-text"></p>
+            </div>-->
         </div>
-        <div id="upgrades">
-            <div id="upgradesBg">
-                <div id="upgradesContent">
-                    <p>Buy а Bot</p>
-                    <button><a href=# onclick="buyAutoClick()"><img id="autoClicksImg" src="imgs/upgrades/clicker.png"></a></button>
-                    <p id="costAutoClick">12 Surfs</p>
-                    <p id="amountAutoClicks">You Own 0 Bots.</p>
-                    <br>
-                    <p>Upgrade CPU</p>
-                    <button><a href=# onclick="upgradeCPU()"><img id="upgradedCPUImg" src="imgs/upgrades/prozessor.png"></a></button>
-                    <p id="costUpgradedCPU">15 Surfs</p>
-                    <p id="amountUpgradesCPU">You Upgraded CPU 0 Times</p>
-                    <p>Buy PC</p>
-                    <button><a href=# onclick="buyPC()"><img id="broughtPCImg" src="imgs/upgrades/pc-screen.png"></a></button>
-                    <p id="costBroughtPC">15 Surfs</p>
-                    <p id="amountBroughtPCs">You brought 0 PCs</p>
+        <section id="upgrades-buildings-section">
+            <div id="upgrades">
+                <div id="upgradesBg">
+                    <h3>Upgrades</h3>
+                    <div id="upgradesContent">
+                        <button><a href=# onclick="buyAutoClick()"><img id="autoClicksImg" src="imgs/upgrades/clicker.png"></a>
+                            <div id="cost-amount-AutoClicks">
+                                <p>Buy a Bot</p><img src="imgs/upgrades/clicker.png" height="200px">
+                                <p id="costAutoClick">15 Surfs</p>
+                                <p id="amountAutoClicks">You own 0 bots</p> 
+                            </div>
+                        </button>
+                        <button><a href=# onclick="upgradeCPU()"><img id="upgradedCPUImg" src="imgs/upgrades/prozessor.png"></a>
+                            <div id="cost-amount-UpgradedCPU">
+                                <p>Upgrade CPU</p><img src="imgs/upgrades/prozessor.png" height="200px">
+                                <p id="costUpgradedCPU">15 Surfs</p>
+                                <p id="amountUpgradesCPU">You Upgraded CPU 0 Times</p>
+                            </div>
+                        </button>
+                        <button><a href=# onclick="buyPC()"><img id="broughtPCImg" src="imgs/upgrades/pcUpgrade2.png"></a>
+                            <div id="cost-amount-BroughtPC" >                    
+                                <p>Buy PC</p><img src="imgs/upgrades/pcUpgrade2.png" height="200px">
+                                <p id="costBroughtPC">15 Surfs</p>
+                                <p id="amountBroughtPCs">You brought 0 PCs</p> 
+                            </div>
+                        </button>
+                        <button><a href=# onclick="buyPC()"><img id="broughtPCImg" src="imgs/upgrades/antiVirus.png"></a>
+                            <div id="cost-amount-BroughtPC" >                    
+                                <p>Buy PC</p><img src="imgs/upgrades/antiVirus.png" height="200px">
+                                <p id="costBroughtPC">15 Surfs</p>
+                                <p id="amountBroughtPCs">You brought 0 PCs</p> 
+                            </div>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div id="buildings">
+                <div id="buildingsBg">
+                    <h3>Buildings</h3>
+                </div>
+            </div>
+        </section>
     </div>
     <script src="scripts.js"></script>
 </body>

@@ -4,23 +4,24 @@ var upgradedCPUs = 0;
 var broughtPC = 0;
 var multiplier = 1;
 let show = true;
+
 var i = 1;
 function update()
 {   
     document.getElementById("first-number").innerHTML ="+" + i;
-    document.getElementById("clicksAmount").innerHTML = "You got " + clicksCount + " Surfs";
-    document.title = clicksCount + " Surfs";
+    document.getElementById("clicksAmount").innerHTML = clicksCount + " Info";
+    document.title = clicksCount + " Info";
 
     document.getElementById("amountAutoClicks").innerHTML = "You Own " + autoClicksCount + " Bots..";
-    document.getElementById("costAutoClick").innerHTML = ((autoClicksCount+1) * 12) + " Surfs";
+    document.getElementById("costAutoClick").innerHTML = ((autoClicksCount+1) * 12) + " Info";
 
     document.getElementById("amountUpgradesCPU").innerHTML = "You Upgraded CPU " + upgradedCPUs + " Times..";
-    document.getElementById("costUpgradedCPU").innerHTML = ((upgradedCPUs+1) * 15) + " Surfs";
+    document.getElementById("costUpgradedCPU").innerHTML = ((upgradedCPUs+1) * 15) + " Info";
 
     document.getElementById("amountBroughtPCs").innerHTML = "You brought " + broughtPC + " PCs";
-    document.getElementById("costBroughtPC").innerHTML = ((broughtPC+1) * 15) + " Surfs";
+    document.getElementById("costBroughtPC").innerHTML = ((broughtPC+1) * 15) + " Info";
 
-    document.getElementById("surfsPerSecond").innerHTML = "You are gaining " + (((autoClicksCount)+(upgradedCPUs*2))*multiplier) + " Surfs per/s";
+    document.getElementById("surfsPerSecond").innerHTML = "(" + (((autoClicksCount)+(upgradedCPUs*2))*multiplier) + " Info per/s)";
     getMessage();
     changeBg();
 }
