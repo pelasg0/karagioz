@@ -40,12 +40,14 @@ var broughtIlluminatiMansion = 0;
 
 
 //startIndex
+var o = 0;
+var q = 0;
 var i = 1;
 var clicksCount = 0;
 var progressCount = 0;
 var multiplier = 1;
 let show = true;
-var b = 100;
+var b = 10;
 //variablesSection
 
 
@@ -53,7 +55,9 @@ var b = 100;
 //callFunctionSection
 
 //timer
+setInterval(countThisSecond, 10000)
 setInterval(timer, 1000);
+setInterval(countThis, 60000);
 //achievement
 //callFunctionSection
 
@@ -82,7 +86,19 @@ document.getElementById("bonusElement").onclick = function(){
     }, 10000)
 }
 
-
+//testFunctionCounting
+function countThis()
+{
+    q++;
+    if(q > 2)
+    {
+        q = 0;
+    }
+}
+function countThisSecond()
+{
+    o++;
+}
 
 //randomFunction
 function getRandomArbitrary(min, max) {
@@ -168,6 +184,7 @@ function update()
     getMessage();
     changeBg();
     showAchievement();
+    changeTime();
 }
 //infoCount
 function clickThis()
@@ -500,7 +517,7 @@ function buyBasement()
 {
     if(clicksCount >= (broughtBasement+1) * 100 )
     {
-        i = i + 0.2;
+        i = i + 1;
         clicksCount = clicksCount - ((broughtBasement+1) * 100);
         broughtBasement = broughtBasement + 1;
         update();
@@ -510,7 +527,7 @@ function buySingleHouse()
 {
     if(clicksCount >= ((broughtSingleHouse+1) * 300))
     {
-        i = i + 0.4;
+        i = i + 3;
         clicksCount = clicksCount - ((broughtSingleHouse+1) * 300);
         broughtSingleHouse = broughtSingleHouse + 1;
         update();
@@ -520,7 +537,7 @@ function buyNeighborhood()
 {
     if(clicksCount >= ((broughtNeighborhood+1) * 600))
     {
-        i = i + 0.6;
+        i = i + 6;
         clicksCount = clicksCount - ((broughtNeighborhood+1) * 600);
         broughtNeighborhood = broughtNeighborhood + 1;
         update();
@@ -530,7 +547,7 @@ function buyLandfill()
 {
     if(clicksCount >= ((broughtLandfill+1) * 1000))
     {
-        i = i + 0.8;
+        i = i + 10;
         clicksCount = clicksCount - ((broughtLandfill+1) * 1000);
         broughtLandfill = broughtLandfill + 1;
         update();
@@ -540,7 +557,7 @@ function buyOfficeBuilding()
 {
     if(clicksCount >= ((broughtOfficeBuilding+1) * 1500))
     {
-        i = i + 1;
+        i = i + 15;
         clicksCount = clicksCount - ((broughtOfficeBuilding+1) * 1500);
         broughtOfficeBuilding = broughtOfficeBuilding + 1;
         update();
@@ -550,7 +567,7 @@ function buyMetropolis()
 {
     if(clicksCount >= ((broughtMetropolis+1) * 3000))
     {
-        i = i + 1.2;
+        i = i + 30;
         clicksCount = clicksCount - ((broughtMetropolis+1) * 3000);
         broughtMetropolis = broughtMetropolis + 1;
         update();
@@ -560,7 +577,7 @@ function buyTetherGarage()
 {
     if(clicksCount >= ((broughtTetherGarage+1) * 4500))
     {
-        i = i + 1.4;
+        i = i + 45;
         clicksCount = clicksCount - ((broughtTetherGarage+1) * 4500);
         broughtTetherGarage = broughtTetherGarage + 1;
         update();
@@ -570,7 +587,7 @@ function buyEtheriumGarage()
 {
     if(clicksCount >= ((broughtEtheriumGarage+1) * 6000))
     {
-        i = i + 1.6;
+        i = i + 60;
         clicksCount = clicksCount - ((broughtEtheriumGarage+1) * 6000);
         broughtEtheriumGarage = broughtEtheriumGarage + 1;
         update();
@@ -580,7 +597,7 @@ function buyBitcoinGarage()
 {
     if(clicksCount >= ((broughtBitcoinGarage+1) * 7500))
     {
-        i = i + 1.8;
+        i = i + 75;
         clicksCount = clicksCount - ((broughtBitcoinGarage+1) * 7500);
         broughtBitcoinGarage = broughtBitcoinGarage + 1;
         update();
@@ -590,7 +607,7 @@ function buyIlluminatiMansion()
 {
     if(clicksCount >= ((broughtIlluminatiMansion+1) * 10000))
     {
-        i = i + 2;
+        i = i + 100;
         clicksCount = clicksCount - ((broughtIlluminatiMansion+1) * 10000);
         broughtIlluminatiMansion = broughtIlluminatiMansion + 1;
         update();
@@ -604,78 +621,84 @@ function buyIlluminatiMansion()
 //progressMessagesAndBackgrounds
 function getMessage()
 {
-    let mess1 = "Nice to meet you, I am your bot-friend (｡◕‿◕｡)";
-    let mess2 = "You are starting your surfing journey pretty well ಠ‿ಠ";
-    let mess3 = "Got the hand of it didn't you (╬ ಠ益ಠ)";
-    let mess4 = "1010100101010000111...101010101010011";
-    let mess5 = "Алмосt killed me you motherfucker";
-    let mess6 = "YOU ARE ALREADY THERE ???!";
-    let mess7 = "Welcome to TOR Browser !";
+    let mess1 = "Nice to meet you, I am your assistant(｡◕‿◕｡)";
+    let mess2 = "With every click you are getting Info｡^‿^｡";
+    let mess3 = "We live in a world where Information is EVERYTHING(◑○◑)";
+    let mess4 = "You could even say that Information = Money(¬‿¬)";
+    let mess5 = "You can buy upgrades and buildings with it⧹(⦁ᴗ⦁)⧸";
+    let mess6 = "Getting better at it hehe(─‿─)";
+    let mess7 = "Hope you liked my short introduction⊂(▀¯▀⊂ )";
+    let mess8 = "I will also inform you what is happening outside┌(▀Ĺ̯▀)┐"
+    let mess9 = "●︿●"
 
-    if(progressCount < 30)
+    if(o == 1)
     {
         document.getElementById("innerMessage").innerHTML = mess1;
     }
-    else if(progressCount < 50)
+    else if(o == 2)
     {
         document.getElementById("innerMessage").innerHTML = mess2;
     }
-    else if(progressCount < 60)
+    else if(o == 3)
     {
         document.getElementById("innerMessage").innerHTML = mess3;
     }
-    else if(progressCount < 70)
+    else if(o == 4)
     {
         document.getElementById("innerMessage").innerHTML = mess4;
     }
-    else if(progressCount < 80)
+    else if(o == 5)
     {
         document.getElementById("innerMessage").innerHTML = mess5;
     }
-    else if(progressCount < 90)
+    else if(o == 6)
     {
         document.getElementById("innerMessage").innerHTML = mess6;
     }
-    else if(progressCount < 100)
+    else if(o == 7)
     {
         document.getElementById("innerMessage").innerHTML = mess7;
     }
-    else if(progressCount > 100)
+    else if(o == 8)
     {
-        document.getElementById("innerMessage").innerHTML = mess7;
+        document.getElementById("innerMessage").innerHTML = mess8;
+    }
+    else if(o == 9)
+    {
+        document.getElementById("innerMessage").innerHTML = mess9;
     }
 }
 function changeBg()
 {
-    if(progressCount < 30)
+    if(progressCount < 100)
     {
         document.getElementById("desktopWindow").style.backgroundImage = "url(imgs/browsers/Unbenannt1.gif)"; 
     }
-    else if(progressCount < 50)
+    else if(progressCount < 500)
     {
         document.getElementById("desktopWindow").style.backgroundImage = "url(imgs/browsers/Unbenannt2.gif)"; 
     }
-    else if(progressCount < 60)
+    else if(progressCount < 1000)
     {
         document.getElementById("desktopWindow").style.backgroundImage = "url(imgs/browsers/Unbenannt3.gif)"; 
     }
-    else if(progressCount < 70)
+    else if(progressCount < 2000)
     {
         document.getElementById("desktopWindow").style.backgroundImage = "url(imgs/browsers/Unbenannt4.gif)"; 
     }
-    else if(progressCount < 80)
+    else if(progressCount < 3000)
     {
         document.getElementById("desktopWindow").style.backgroundImage = "url(imgs/browsers/Unbenannt5.gif)"; 
     }
-    else if(progressCount < 90)
+    else if(progressCount < 4000)
     {
         document.getElementById("desktopWindow").style.backgroundImage = "url(imgs/browsers/TorBrowser1.gif)"; 
     }
-    else if(progressCount < 100)
+    else if(progressCount < 5000)
     {
         document.getElementById("desktopWindow").style.backgroundImage = "url(imgs/browsers/TorBrowser1.gif)"; 
     }
-    else if(progressCount > 100)
+    else if(progressCount > 6000)
     {
         document.getElementById("desktopWindow").style.backgroundImage = "url(imgs/browsers/TorBrowser1.gif)"; 
     }
@@ -686,50 +709,76 @@ function changeBg()
 //achievementSection
 
 
-
+function changeTime()
+{
+    if(q == 0)
+    {
+        document.body.style.backgroundImage = "url(imgs/background/sky-clouds-day.gif)"; 
+        document.getElementById("city").style.backgroundImage = "url(imgs/background/city/city2.gif)";
+    }
+    else if (q == 1)
+    {
+        document.body.style.backgroundImage = "url(imgs/background/sky-clouds-day1.gif)"; 
+        document.getElementById("city").style.backgroundImage = "url(imgs/background/city/citySunset.gif)";
+    }
+    else if (q == 2)
+    {
+        document.body.style.backgroundImage = "url(imgs/background/sky-clouds-night.gif)"; 
+        document.getElementById("city").style.backgroundImage = "url(imgs/background/city/cityNight.gif)";
+    }
+}
 
 
 //achievementSection
 function showAchievement()
 {
-    if(progressCount > 10 && progressCount < 20 )
+    if(progressCount > 0 && progressCount < 500 )
     {
         document.getElementById("ach-1").style.visibility = "visible";
     }
-    else if (progressCount > 20 && progressCount < 30 )
+    else if (progressCount > 500 && progressCount < 1500 )
     {
+        document.getElementById("ach-1").style.visibility = "hidden";
         document.getElementById("ach-2").style.visibility = "visible";
     }
-    else if (progressCount > 30 && progressCount < 40 )
+    else if (progressCount > 1500 && progressCount < 3000 )
     {
+        document.getElementById("ach-2").style.visibility = "hidden";
         document.getElementById("ach-3").style.visibility = "visible";
     }
-    else if (progressCount > 40 && progressCount < 60 )
+    else if (progressCount > 3000 && progressCount < 4000 )
     {
+        document.getElementById("ach-3").style.visibility = "hidden";
         document.getElementById("ach-4").style.visibility = "visible";
     }
-    else if (progressCount > 60 && progressCount < 70 )
+    else if (progressCount > 4000 && progressCount < 5000 )
     {
+        document.getElementById("ach-4").style.visibility = "hidden";
         document.getElementById("ach-5").style.visibility = "visible";
     }
-    else if (progressCount > 80 && progressCount < 90 )
+    else if (progressCount > 5000 && progressCount < 6000 )
     {
+        document.getElementById("ach-5").style.visibility = "hidden";
         document.getElementById("ach-6").style.visibility = "visible";
     }
-    else if (progressCount > 100 && progressCount < 110 )
+    else if (progressCount > 6000 && progressCount < 7000 )
     {
+        document.getElementById("ach-6").style.visibility = "hidden";
         document.getElementById("ach-7").style.visibility = "visible";
     }
-    else if (progressCount > 110 && progressCount < 120 )
+    else if (progressCount > 8000 && progressCount < 9000 )
     {
+        document.getElementById("ach-7").style.visibility = "hidden";
         document.getElementById("ach-8").style.visibility = "visible";
     }
-    else if (progressCount > 120 && progressCount < 130 )
+    else if (progressCount > 9000 && progressCount < 10000 )
     {
+        document.getElementById("ach-8").style.visibility = "hidden";
         document.getElementById("ach-9").style.visibility = "visible";
     }
-    else if (progressCount > 130 && progressCount < 140 )
+    else if (progressCount > 10000 && progressCount < 11000 )
     {
+        document.getElementById("ach-9").style.visibility = "hidden";
         document.getElementById("ach-10").style.visibility = "visible";
     }
     else
