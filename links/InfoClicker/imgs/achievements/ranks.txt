@@ -1,0 +1,10 @@
+1. Newbie
+2. Beginner
+3. Surfer
+4. Boomer
+5. InfoBroker
+6. Hacker
+7. DatabaseDestroyer
+8. CyberPhantom
+9. RobinHood
+10.Anon

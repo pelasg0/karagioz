@@ -1,0 +1,727 @@
+@keyframes pulsate
+{
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+@keyframes numberani
+{
+    0% {opacity: 1; top: 490px;}  
+    50% {opacity: 0.5; top: 480px;}
+    100% {opacity: 0; top: 465px;}
+}
+@keyframes cursor-blink 
+{
+    0% {
+      opacity: 0;
+    }
+}
+.animation-number
+{
+    animation-name: numberani;
+    animation-duration: 0.3s;
+}
+.animation
+{
+    animation-name: pulsate;
+    animation-duration: 0.3s;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=VT323&display=swap');
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'VT323', monospace;
+    font-size: 1.6em;
+    /*background-image: url("imgs/back2.jpg");*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)) , url("imgs/background/sky-clouds-day.gif");
+    background-size: 50%;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    font-size: 1.5vw;
+    background-blend-mode: darken;
+    
+}
+#bonusElement
+{
+    z-index: 100000;
+    background-color: red;
+    width: 300px;
+    height: 300px;
+}
+a
+{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: #fff;
+    text-decoration: none;
+}
+input
+{
+    text-align: center;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+    width: auto;
+    font-size: 1.5em;
+}
+
+/*-------------------------------CLICKER----------------------------- SECTION*/
+
+#wholeClickerSection
+{
+    display: flex;
+    
+}
+#clickerBg
+{
+    /*background-color: rgba(25, 25, 25);*/
+    height: 100vh;
+    width: 25vw;
+    transition: 0.5s;
+}
+/*#clickerBg:hover
+{
+    background-color: rgba(150, 150, 150, 0.2);
+}*/
+#clicksAmount
+{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#surfsPerSecond
+{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 10vw;
+    height: 5vh;
+}
+#clicksImg
+{
+    margin-bottom: 100px;
+    width: 15vw;
+    opacity: 1;
+    transition: 0.5s;
+}
+#clicksImg:hover
+{
+    transform: scale(1.1);
+}
+#clickerContent
+{
+    padding: 30px;
+}
+button
+{
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    height: 50px;
+    width: 50px;
+    padding: 2px;
+}
+#clicker button
+{
+    border:none;
+    font-family: 'VT323', monospace;
+    font-size: 1.1em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#clicker
+{
+    z-index: 200;
+}
+#first-number img
+{
+    height: 30px;
+    opacity: 1;
+}
+#first-number
+{
+    font-size: 2em;
+    position: absolute;
+    opacity: 0;
+    top: 200px;
+    left: 14vw;
+}
+#second-number
+{
+    opacity: 0;
+}
+
+#save-click-reset-Buttons
+{
+    width: 13vw;
+    position: relative;
+
+}
+/*clicker-section*/
+
+
+#upgrades-buildings-section
+{
+    display: flex;
+    gap: 0;
+}
+/*-------------------------------UPGRADES----------------------------- SECTION*/
+
+#upgrades
+{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 16vw;
+    border: 5px solid rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    background-color: rgba(68, 68, 68, 0.9);
+}
+
+
+/*upgrades-Cost*/
+
+#cost-amount-BroughtDoner
+{
+    display: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    position: absolute;
+    width: 13vw;
+    height: auto;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+#cost-amount-BroughtAntivirus
+{
+    display: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    position: absolute;
+    width: 13vw;
+    height: auto;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+#cost-amount-BroughtVPN
+{
+    display: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    position: absolute;
+    width: 13vw;
+    height: auto;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+#cost-amount-BroughtRAM
+{
+    display: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    position: absolute;
+    width: 13vw;
+    height: auto;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+#cost-amount-BroughtMonitor
+{
+    display: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    position: absolute;
+    width: 13vw;
+    height: auto;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+#cost-amount-BroughtProcessor
+{
+    display: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    position: absolute;
+    width: 13vw;
+    height: auto;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+#cost-amount-BroughtLaptop
+{
+    display: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    position: absolute;
+    width: 13vw;
+    height: auto;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+#cost-amount-BroughtPC
+{
+    display: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    position: absolute;
+    width: 13vw;
+    height: auto;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+#cost-amount-BroughtBot
+{
+    display: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    position: absolute;
+    width: 13vw;
+    height: auto;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+#cost-amount-BroughtWifi
+{
+    display: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    position: absolute;
+    width: 13vw;
+    height: auto;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+
+/*upgrades-Size*/
+
+#broughtDonerImg
+{
+    height: 40px;
+}
+#broughtAntivirusImg
+{
+    height: 40px;
+}
+#broughtVPNImg
+{
+    height: 40px;
+}
+#broughtRAMImg
+{
+    width: 40px;
+}
+#broughtMonitorImg
+{
+    width: 40px;
+}
+#broughtProcessorImg
+{
+    width: 40px;
+}
+#broughtLaptopImg
+{
+    width: 40px;
+}
+#broughtPCImg
+{
+    width: 40px;
+}
+#broughtBotImg
+{
+    width: 40px;
+}
+#broughtWifiImg
+{
+    width: 40px;
+}
+
+
+/*showUpgrades*/
+
+a:hover + #cost-amount-BroughtDoner
+{
+    display: block;
+}
+a:hover + #cost-amount-BroughtAntivirus
+{
+    display: block;
+}
+a:hover + #cost-amount-BroughtVPN
+{
+    display: block;
+}
+a:hover + #cost-amount-BroughtRAM
+{
+    display: block;
+}
+a:hover + #cost-amount-BroughtMonitor
+{
+    display: block;
+}
+a:hover + #cost-amount-BroughtProcessor
+{
+    display: block;
+}
+a:hover + #cost-amount-BroughtLaptop
+{
+    display: block;
+}
+a:hover + #cost-amount-BroughtPC
+{
+    display: block;
+}
+a:hover + #cost-amount-BroughtBot
+{
+    display: block;
+}
+a:hover + #cost-amount-BroughtWifi
+{
+    display: block;
+}
+
+/*updates-section*/
+
+
+/*-------------------------------BUILDINGS----------------------------- SECTION*/
+
+#buildings
+{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 16vw;
+    border: 5px solid rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    background-color: rgba(68, 68, 68, 0.9);
+}
+/*buildings-Costs*/
+
+#cost-amount-BroughtBasement
+{
+    display: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    position: absolute;
+    width: 13vw;
+    height: auto;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+
+#cost-amount-BroughtSingleHouse
+{
+    display: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    position: absolute;
+    width: 13vw;
+    height: auto;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+#cost-amount-BroughtNeighborhood
+{
+    display: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    position: absolute;
+    width: 13vw;
+    height: auto;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+#cost-amount-BroughtLandfill
+{
+    display: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    position: absolute;
+    right: 5px;
+    width: 13vw;
+    height: auto;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+#cost-amount-BroughtOfficeBuilding
+{
+    display: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    position: absolute;
+    right: 20px;
+    width: 13vw;
+    height: auto;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+#cost-amount-BroughtMetropolis
+{
+    display: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    position: absolute;
+    right: 20px;
+    width: 13vw;
+    height: auto;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+#cost-amount-BroughtTetherGarage
+{
+    display: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    position: absolute;
+    right: 20px;
+    width: 13vw;
+    height: auto;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+#cost-amount-BroughtEtheriumGarage
+{
+    display: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    position: absolute;
+    right: 20px;
+    width: 13vw;
+    height: auto;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+#cost-amount-BroughtBitcoinGarage
+{
+    display: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    position: absolute;
+    right: 20px;
+    width: 13vw;
+    height: auto;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+#cost-amount-BroughtIlluminatiMansion
+{
+    display: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+    position: absolute;
+    right: 20px;
+    width: 13vw;
+    height: auto;
+    background-color: rgba(250, 250, 250, 0.3);
+    border: 5px solid rgba(0, 0, 0, 0.4);
+}
+
+
+/*buildings-Size*/
+
+#broughtBasementImg
+{
+    height: 40px;
+}
+#broughtSingleHouseImg
+{
+    height: 40px;
+}
+#broughtNeighborhoodImg
+{
+    height: 40px;
+}
+#broughtLandfillImg
+{
+    height: 40px;
+}
+#broughtOfficeBuildingImg
+{
+    height: 40px;
+}
+#broughtMetropolisImg
+{
+    height: 40px;
+}
+#broughtTetherGarageImg
+{
+    height: 40px;
+}
+#broughtEtheriumGarageImg
+{
+    height: 40px;
+}
+#broughtBitcoinGarageImg
+{
+    height: 40px;
+}
+#broughtIlluminatiMansionImg
+{
+    height: 40px;
+}
+
+
+/*showBuildings*/
+a:hover + #cost-amount-BroughtBasement
+{
+    display: block;
+}
+a:hover + #cost-amount-BroughtSingleHouse
+{
+    display: block;
+}
+a:hover + #cost-amount-BroughtNeighborhood
+{
+    display: block;
+}
+a:hover + #cost-amount-BroughtLandfill
+{
+    display: block;
+}
+a:hover + #cost-amount-BroughtOfficeBuilding
+{
+    display: block;
+}
+a:hover + #cost-amount-BroughtMetropolis
+{
+    display: block;
+}
+a:hover + #cost-amount-BroughtTetherGarage
+{
+    display: block;
+}
+a:hover + #cost-amount-BroughtEtheriumGarage
+{
+    display: block;
+}
+a:hover + #cost-amount-BroughtBitcoinGarage
+{
+    display: block;
+}
+a:hover + #cost-amount-BroughtIlluminatiMansion
+{
+    display: block;
+}
+/*buildings-section*/
+
+
+
+
+/*-------------------------------DESKTOPWINDOWS----------------------------- SECTION*/
+
+
+
+
+/*desktop-window*/
+
+#desktopWindow
+{
+    margin-top: 10vh;
+    position: relative;
+    border: 2px solid black;
+    width: 35vw;
+    height: 30vh;
+    background-image: url(imgs/browsers/Unbenannt1.gif);
+    background-size: cover;
+    background-repeat: no-repeat;   
+    opacity: 1;
+    transition: 0.5s;
+    background-color: #fff;
+}
+
+
+/*desktop-window*/
+
+/*city*/
+
+#city
+{
+    border: 2px solid black;
+    margin-top: 10vh;
+    width: 20vw;
+    height: 17vh;
+    background-image: url(imgs/background/city/city2.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*city/*
+
+/*achievement*/
+
+#achievement-container
+{
+    display: none;
+}
+
+
+/*achievement*/
+
+#ach-1
+{
+    position: absolute;
+    height: 8vh;
+    visibility: hidden;
+}
+#ach-2
+{
+    position: absolute;
+    height: 8vh;
+    visibility: hidden;
+}
+#ach-3
+{
+    position: absolute;
+    height: 8vh;
+    visibility: hidden;
+}
+#ach-4
+{
+    position: absolute;
+    height: 8vh;
+    visibility: hidden;
+}
+#ach-5
+{
+    position: absolute;
+    height: 8vh;
+    visibility: hidden;
+}
+#ach-6
+{
+    position: absolute;
+    height: 8vh;
+    visibility: hidden;
+}
+#ach-7
+{
+    position: absolute;
+    height: 8vh;
+    visibility: hidden;
+}
+#ach-8
+{
+    position: absolute;
+    height: 8vh;
+    visibility: hidden;
+}
+#ach-9
+{
+    position: absolute;
+    height: 8vh;
+    visibility: hidden;
+}
+#ach-10
+{
+    position: absolute;
+    height: 8vh;
+    visibility: hidden;
+}
+
+/*message*/
+
+#message
+{
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: bottom;
+    height: 50px;
+    width: 30vw;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+/*message*/
