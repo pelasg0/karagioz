@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title> CNM's Website </title>
+    <link rel= "stylesheet" href="styles/styles.css"> 
+    <link rel= "stylesheet" href="styles/lightbox.min.css"> 
+</head>
+<body>
+    <!--<div class="toggle" onclick="toggleMenu();"></div>                  BUTTON
+    -->  
+    <header class = "primary-header flex">
+        <div>
+            <img src="imgs/toggleicons/logo1.png" class = "logo">
+        </div>     
+        <button class = "mobile-nav-toggle" aria-controls = "primary-navigation" aria-expanded = "false"><span class = "sr-only"></span></button>     
+        <nav> 
+            <ul class="primary-navigation flex" data-visible="false" id="primary-navigation">
+                <li><a href="#home"><span aria-hidden="true"></span>Home</a></li>
+                <li><a href="#about"><span aria-hidden="true"></span>About</a></li>
+                <li><a href="#skills"><span aria-hidden="true"></span>Skills</a></li>
+                <li><a href="#landscape-slideshow"><span aria-hidden="true"></span>Slider</a></li>
+                <li><a href="#gallery"><span aria-hidden="true"></span>Gallery</a></li>
+                <li><a href="#projects"><span aria-hidden="true"></span>Projects</a></li>
+            </ul>   
+        </nav>   
+    </header>   
+    <section class="banner" id="home">
+        <div class="imgSidebar">
+            <img src="imgs/avatarbox/tim-mossholder-kD70xb1pUdg-unsplash-min.jpg">
+        </div>
+        <div class="contentBx">
+            <div>
+                <h4><span>Привет</span>, I'm</h4>
+                <h2>Simeon Gerchev</h2>
+                
+                <p>Ich bin Simeon (21) aus Bulgarien und mein Interesse gilt Webdesign, Game Design & Development und Graphic Design.</p>
+                <p>Zurzeit befinde ich mich in der Ausbildung zum Informatiker Schwerpunkt Multimedia am FAL Berufskolleg.</p>
+                <p>Wenn Sie mehr über mich erfahren möchten, können Sie auch nach unten scrollen.</p>
+                <a href="#about" class="btn">About Me</a>
+            </div>
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/Recenge/"><img src="imgs/socialmediaicons/facebook-logo-108.png" ></a></li>
+                <li><a href="https://www.instagram.com/simeca_g/"><img src="imgs/socialmediaicons/instagram-111.png" ></a></li>
+                <li><a href="https://www.artstation.com/vincyay"><img src="imgs/socialmediaicons/photos-10613.png" ></a></li>
+            </ul>
+        </div>
+        
+    </section>
+
+    <section class="about" id="about">
+        <div class="title">
+            <h2>About Me</h2> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, illum.</p>
+        </div>
+        <div class="content-about">
+            <div class="TextBx">
+                <ul class="details-about">
+                    <h1>I Am Interested In</h1>
+                    <li>Web Development<span></span></li>
+                    <li>Web Design<span></span></li>
+                    <li>Game Development<span></span></li>                   
+                    <li>Game Design<span></span></li>
+                    <li>Concept Art<span></span></li><div class="cursorbl"></div>       
+                </ul>
+            </div>
+            <div class="imgBx">
+                <img src="imgs/avatarbox/window.png">
+            </div>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <div class="inner-skills">      
+            <div class="title">
+                <h2>My Skills</h2> 
+            </div>   
+            <div class= "container-skills">
+                <div class= "box-skill">
+                    <div class= "title-skill">
+                        <div class= "img-skill">
+                            <img src= "imgs/skillSectionImgs/file.png" class="icon-skill">
+                        </div>
+                        <h3>HTML</h3>
+                    </div>
+                    <p>Advanced, 1 Year of Experience</p>
+                </div>
+                <div class= "box-skill">
+                    <div class= "title-skill">
+                        <div class= "img-skill">
+                            <img src= "imgs/skillSectionImgs/css.png" class="icon-skill">
+                        </div>
+                        <h3>CSS</h3>
+                    </div>
+                    <p>Intermediate, 11 Months of Experience</p>
+                </div>
+                <div class= "box-skill">
+                    <div class= "title-skill">
+                        <div class= "img-skill">
+                            <img src= "imgs/skillSectionImgs/js.png" class="icon-skill">
+                        </div>
+                        <h3>JAVA SCRIPT</h3>
+                    </div>
+                    <p>Beginner, 2 Months of Experience</p>
+                </div>
+                <div class= "box-skill">
+                    <div class= "title-skill">
+                        <div class= "img-skill">
+                            <img src= "imgs/skillSectionImgs/c-sharp.png" class="icon-skill">
+                        </div>
+                        <h3>C#</h3>
+                    </div>
+                    <p>Beginner, 1/2 Year of Experience</p>
+                </div>
+                <div class= "box-skill">
+                    <div class= "title-skill">
+                        <div class= "img-skill">
+                            <img src= "imgs/skillSectionImgs/psd.png" class="icon-skill">
+                        </div>
+                        <h3>Photoshop</h3>
+                    </div>
+                    <p>Advanced, 7+ Years of Experience</p>
+                </div>
+                <div class= "box-skill">
+                    <div class= "title-skill">
+                        <div class= "img-skill">
+                            <img src= "imgs/skillSectionImgs/wolke.png" class="icon-skill">
+                        </div>
+                        <h3>Illustrator</h3>
+                    </div>
+                    <p>Beginner, 1/2 Year of Experience</p>
+                </div>
+                <div class= "box-skill">
+                    <div class= "title-skill">
+                        <div class= "img-skill">
+                            <img src= "imgs/skillSectionImgs/indesign.png" class="icon-skill">
+                        </div>
+                        <h3>InDesign</h3>
+                    </div>
+                    <p>Beginner, 1/2 Year of Experience</p>
+                </div>
+                <div class= "box-skill">
+                    <div class= "title-skill">
+                        <div class= "img-skill">
+                            <img src= "imgs/skillSectionImgs/blender.png" class="icon-skill">
+                        </div>
+                        <h3>Blender (3D Software)</h3>
+                    </div>
+                    <p>Beginner, 1/2 Year of Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class = "landscape-slideshow" id = "landscape-slideshow">
+        <div class = "landscape-slider">
+            <div class = "landscape-slides">
+                <input type = "radio" name = "landscape-radio-btn" id = "landscape-radio1">
+                <input type = "radio" name = "landscape-radio-btn" id = "landscape-radio2">
+                <input type = "radio" name = "landscape-radio-btn" id = "landscape-radio3">
+            
+                <div class = "landscape-slide first">
+                    <img src = "imgs/slider landscape imgs/1.jpg" alt = "">
+                </div>
+                <div class = "landscape-slide">
+                    <img src = "imgs/slider landscape imgs/2.jpg" alt = "">
+                </div>
+                <div class = "landscape-slide">
+                    <img src = "imgs/slider landscape imgs/3.jpg" alt = "">
+                </div>
+            
+                <div class = "landscape-navigation-auto">
+                    <div class = "landscape-auto-btn1"></div>
+                    <div class = "landscape-auto-btn2"></div>
+                    <div class = "landscape-auto-btn3"></div>
+                </div>
+                <div class = "landscape-navigation-manual">
+                    <label for ="landscape-radio1" class = "landscape-manual-btn"></label>
+                    <label for ="landscape-radio2" class = "landscape-manual-btn"></label>
+                    <label for ="landscape-radio3" class = "landscape-manual-btn"></label>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class = "gallery" id = "gallery">
+        <div class="title" style="padding-bottom: 50px" >
+            <h2>Gallery</h2> 
+        </div>
+        <div class = "gallery-container">
+                <a href = "imgs/gallery/abandonedd big.jpg" data-lightbox = "mygallery"><img src = "imgs/gallery/abandonedd small.jpg"></a>
+
+                <a href = "imgs/gallery/forestt big.jpg" data-lightbox = "mygallery"><img src = "imgs/gallery/forestt small.jpg"></a>
+
+                <a href = "imgs/gallery/desert wallpaper big.jpg" data-lightbox = "mygallery"><img src = "imgs/gallery/desert wallpaper small.jpg"></a>
+
+                <a href = "imgs/gallery/moountains big.jpg" data-lightbox = "mygallery"><img src = "imgs/gallery/moountains small.jpg"></a>
+
+                <a href = "imgs/gallery/black desert big.jpg" data-lightbox = "mygallery"><img src = "imgs/gallery/black desert small.jpg"></a>
+
+                <a href = "imgs/gallery/abandoned city 2 big.jpg" data-lightbox = "mygallery"><img src = "imgs/gallery/abandoned city 2 small.jpg"></a>
+ 
+                <a href = "imgs/gallery/new oc big.jpg" data-lightbox = "mygallery"><img src = "imgs/gallery/new oc small.jpg"></a>
+                
+                <a href = "imgs/gallery/werewolf big.jpg" data-lightbox = "mygallery"><img src = "imgs/gallery/werewolf small.jpg"></a>
+                
+                <a href = "imgs/gallery/gun big.jpg" data-lightbox = "mygallery"><img src = "imgs/gallery/gun small.jpg"></a>
+                
+                <a href = "imgs/gallery/bai ganio big.jpg" data-lightbox = "mygallery"><img src = "imgs/gallery/bai ganio small.jpg"></a>
+                  
+                <a href = "imgs/gallery/Kolyu big.jpg" data-lightbox = "mygallery"><img src = "imgs/gallery/Kolyu small.jpg"></a>
+         
+                <a href = "imgs/gallery/jeko big.jpg" data-lightbox = "mygallery"><img src = "imgs/gallery/jeko small.jpg"></a>
+                   
+                <a href = "imgs/gallery/conceptart hunter big.jpg" data-lightbox = "mygallery"><img src = "imgs/gallery/conceptart hunter small.jpg"></a>
+                   
+                <a href = "imgs/gallery/monster concept big.jpg" data-lightbox = "mygallery"><img src = "imgs/gallery/monster concept small.jpg"></a>
+           
+                <a href = "imgs/gallery/druid remaked big.jpg" data-lightbox = "mygallery"><img src = "imgs/gallery/druid remaked small.jpg"></a>
+         
+                <a href = "imgs/gallery/pelasgo ogluddd big.jpg" data-lightbox = "mygallery"><img src = "imgs/gallery/pelasgo ogluddd small.jpg"></a>
+       
+                <a href = "imgs/gallery/warrior big.jpg" data-lightbox = "mygallery"><img src = "imgs/gallery/warrior small.jpg"></a>
+    
+        </div>
+    </section>
+    <section class="projects" id="projects" >
+        <li><a href="links/InfoClicker/index.html"><span aria-hidden="true"></span>Surf Clicker(incomplete)</a></li>
+    </section>
+
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/lightbox-plus-jquery.min.js"></script>
+</body>
+
+
+</html>
