@@ -47,7 +47,7 @@ var clicksCount = 0;
 var progressCount = 0;
 var multiplier = 1;
 let show = true;
-var b = 10;
+var b = 5;
 //variablesSection
 
 
@@ -71,18 +71,18 @@ setInterval(function(){
         document.getElementById("bonusElement").style.display="none"
         clearInterval(rndIndex);
 
-    }, 3000)
+    }, 5000)
 
-    }, 6000)
+    }, 30000)
 
 
 
 
 document.getElementById("bonusElement").onclick = function(){
     document.getElementById("bonusElement").style.display = "none";
-    i = i + b;
+    i = i * b;
     setTimeout(function(){
-        i = i - b;
+        i = i / b;
     }, 10000)
 }
 
@@ -627,9 +627,9 @@ function getMessage()
     let mess4 = "You could even say that Information = Money(¬‿¬)";
     let mess5 = "You can buy upgrades and buildings with it⧹(⦁ᴗ⦁)⧸";
     let mess6 = "Getting better at it hehe(─‿─)";
-    let mess7 = "Hope you liked my short introduction⊂(▀¯▀⊂ )";
+    let mess7 = "While surfing you find various ways to collect info and get money( ͡° ʖ̯ ͡°)";
     let mess8 = "I will also inform you what is happening outside┌(▀Ĺ̯▀)┐"
-    let mess9 = "●︿●"
+    let mess10 = "●︿●"
 
     if(o == 1)
     {
