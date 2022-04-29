@@ -51,7 +51,7 @@ var b = 5;
 //variablesSection
 
 
-
+clicksCount = 1000;
 //callFunctionSection
 
 //timer

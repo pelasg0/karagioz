@@ -10,22 +10,33 @@
 <body>
     <!--<div class="toggle" onclick="toggleMenu();"></div>                  BUTTON
     -->  
-    <header class = "primary-header flex">
-        <div>
-            <img src="imgs/toggleicons/logo1.png" class = "logo">
-        </div>     
-        <button class = "mobile-nav-toggle" aria-controls = "primary-navigation" aria-expanded = "false"><span class = "sr-only"></span></button>     
-        <nav> 
-            <ul class="primary-navigation flex" data-visible="false" id="primary-navigation">
-                <li><a href="#home"><span aria-hidden="true"></span>Home</a></li>
-                <li><a href="#about"><span aria-hidden="true"></span>About</a></li>
-                <li><a href="#skills"><span aria-hidden="true"></span>Skills</a></li>
-                <li><a href="#landscape-slideshow"><span aria-hidden="true"></span>Slider</a></li>
-                <li><a href="#gallery"><span aria-hidden="true"></span>Gallery</a></li>
-                <li><a href="#projects"><span aria-hidden="true"></span>Projects</a></li>
-            </ul>   
-        </nav>   
-    </header>   
+      
+    <section class="startVideo">
+        <header class = "primary-header flex">
+
+            <img src="imgs/toggleicons/logo1.png" class="logo">
+
+            <button class = "mobile-nav-toggle" aria-controls = "primary-navigation" aria-expanded = "false"><span class = "sr-only"></span></button>   
+            
+            <nav> 
+                <ul class="primary-navigation flex" data-visible="false" id="primary-navigation">
+                    <li><a href="#home"><span aria-hidden="true"></span>Home</a></li>
+                    <li><a href="#about"><span aria-hidden="true"></span>About</a></li>
+                    <li><a href="#skills"><span aria-hidden="true"></span>Skills</a></li>
+                    <li><a href="#landscape-slideshow"><span aria-hidden="true"></span>Slider</a></li>
+                    <li><a href="#gallery"><span aria-hidden="true"></span>Gallery</a></li>
+                    <li><a href="#projects"><span aria-hidden="true"></span>Projects</a></li>
+                </ul>   
+            </nav>   
+        </header> 
+        <div id="content">
+            <h1>Hello World.</h1>
+        </div>
+
+        <video src="imgs/startVideo/VideoSaved1.mp4" muted loop autoplay>
+        </video>
+
+    </section>
     <section class="banner" id="home">
         <div class="imgSidebar">
             <img src="imgs/avatarbox/tim-mossholder-kD70xb1pUdg-unsplash-min.jpg">
@@ -182,6 +193,7 @@
         </div>
 
     </section>
+    <!--
     <section class = "gallery" id = "gallery">
         <div class="title" style="padding-bottom: 50px" >
             <h2>Gallery</h2> 
@@ -223,6 +235,7 @@
     
         </div>
     </section>
+    -->
     <section class="projects" id="projects" >
         <li><a href="links/InfoClicker/index.html"><span aria-hidden="true"></span>Surf Clicker(incomplete)</a></li>
     </section>
