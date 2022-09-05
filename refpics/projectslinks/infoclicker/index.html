@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Info Clicker</title>
+</head>
+<body>
+    <img id="bonusElement" src="imgs/bonusSprite/ISprite.gif" style="display: none; position: absolute;">
+    <div id="wholeClickerSection">
+        <div id="clicker">
+                <div id="clickerBg">
+                    <div id="clickerContent">
+                        <p><span id="clicksAmount">0 Info<p id="surfsPerSecond">(0 Info per/s)</p></span></p>
+                        <br><br>
+                        <a href=# onclick="clickThis()"><img id="clicksImg" src="imgs/clickImg/webLogo---Kopie.gif"></a>
+                        <p id="first-number"></p>
+                        <br><br>
+                        <div id="save-click-reset-Buttons">
+                            <button><a href=# onclick="saveClicks()">Save</a></button>
+                            <button><a href=# onclick="loadClicks()">Load</a></button>
+                            <button><a href=# onclick="resetClicks()">Reset</a></button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+            <br>
+        <div id="desktop">
+            <div id="message">
+                <p id="innerMessage">Your money making web journey hast just started.</p>
+            </div>      
+            <div id="desktopWindow">
+            </div>
+            <div id="city">
+            </div>
+            <div id="achievement-section">
+                <h2 style="padding:0;margin:0;">Achievements</h2>
+                <img id="ach-1" src="imgs/achievements/Newbie1.png">
+                <img id="ach-2" src="imgs/achievements/Beginner2.png">
+                <img id="ach-3" src="imgs/achievements/Surfer3.png">
+                <img id="ach-4" src="imgs/achievements/Boomer4.png">
+                <img id="ach-5" src="imgs/achievements/InfoBroker5.png">
+                <img id="ach-6" src="imgs/achievements/Hacker6.png">
+                <img id="ach-7" src="imgs/achievements/DataDestroyer7.png">
+                <img id="ach-8" src="imgs/achievements/CyberPhantom8.png">
+                <img id="ach-9" src="imgs/achievements/RobinHood9.png">
+                <img id="ach-10" src="imgs/achievements/Anon10.png">
+            </div>
+            
+            <!--<div id="achievement-container">
+                <p id="achi-text"></p>
+            </div>-->
+        </div>
+        <section id="upgrades-buildings-section">
+            <div id="upgrades">
+                <div id="upgradesBg">
+                    <h3>Upgrades</h3>
+                    <div id="upgradesContent">
+                        <button><a href=# onclick="buyDoner()"><img id="broughtDonerImg" src="imgs/upgrades/buyDoner1.png"></a>
+                            <div id="cost-amount-BroughtDoner" >                    
+                                <p>Buy Doner</p><img src="imgs/upgrades/buyDoner1.png" height="200px">
+                                <p id="costBroughtDoner">15 Info</p>
+                                <p id="amountBroughtDoner">You brought 0 Doner</p> 
+                            </div>
+                        </button>
+                        <button><a href=# onclick="buyAntivirus()"><img id="broughtAntivirusImg" src="imgs/upgrades/BuyAntiVirus2.png"></a>
+                            <div id="cost-amount-BroughtAntivirus" >                    
+                                <p>Buy Antivirus</p><img src="imgs/upgrades/BuyAntiVirus2.png" height="200px">
+                                <p id="costBroughtAntivirus">30 Info</p>
+                                <p id="amountBroughtAntivirus">You brought 0 Antivirus</p> 
+                            </div>
+                        </button>
+                        <button><a href=# onclick="buyVPN()"><img id="broughtVPNImg" src="imgs/upgrades/VPN3.png"></a>
+                            <div id="cost-amount-BroughtVPN" >                    
+                                <p>Buy VPN</p><img src="imgs/upgrades/VPN3.png" height="200px">
+                                <p id="costBroughtVPN">60 Info</p>
+                                <p id="amountBroughtVPN">You brought 0 VPN</p> 
+                            </div>
+                        </button>
+                        <button><a href=# onclick="buyRAM()"><img id="broughtRAMImg" src="imgs/upgrades/buyRam4.png"></a>
+                            <div id="cost-amount-BroughtRAM" >                    
+                                <p>Buy RAM</p><img src="imgs/upgrades/buyRam4.png" width="200px">
+                                <p id="costBroughtRAM">120 Info</p>
+                                <p id="amountBroughtRAM">You brought 0 RAM</p> 
+                            </div>
+                        </button>
+                        <button><a href=# onclick="buyMonitor()"><img id="broughtMonitorImg" src="imgs/upgrades/buyMonitor5.png"></a>
+                            <div id="cost-amount-BroughtMonitor" >                    
+                                <p>Buy Monitor</p><img src="imgs/upgrades/buyMonitor5.png" width="200px">
+                                <p id="costBroughtMonitor">240 Info</p>
+                                <p id="amountBroughtMonitor">You brought 0 Monitor</p> 
+                            </div>
+                        </button>
+                        <button><a href=# onclick="buyProcessor()"><img id="broughtProcessorImg" src="imgs/upgrades/upgradeProcessor6.png"></a>
+                            <div id="cost-amount-BroughtProcessor" >                  
+                                <p>Buy Processor</p><img src="imgs/upgrades/upgradeProcessor6.png" width="200px">
+                                <p id="costBroughtProcessor">480 Info</p>
+                                <p id="amountBroughtProcessor">You brought 0 Processor</p> 
+                            </div>
+                        </button>
+                        <button><a href=# onclick="buyLaptop()"><img id="broughtLaptopImg" src="imgs/upgrades/buyLaptop7.png"></a>
+                            <div id="cost-amount-BroughtLaptop" >                  
+                                <p>Buy Laptop</p><img src="imgs/upgrades/buyLaptop7.png" width="200px">
+                                <p id="costBroughtLaptop">960 Info</p>
+                                <p id="amountBroughtLaptop">You brought 0 Laptop</p> 
+                            </div>
+                        </button>
+                        <button><a href=# onclick="buyPC()"><img id="broughtPCImg" src="imgs/upgrades/buyPC8.png"></a>
+                            <div id="cost-amount-BroughtPC" >                  
+                                <p>Buy PC</p><img src="imgs/upgrades/buyPC8.png" width="200px">
+                                <p id="costBroughtPC">1920 Info</p>
+                                <p id="amountBroughtPC">You brought 0 PC</p> 
+                            </div>
+                        </button>
+                        <button><a href=# onclick="buyBot()"><img id="broughtBotImg" src="imgs/upgrades/buyBot9.png"></a>
+                            <div id="cost-amount-BroughtBot" >                  
+                                <p>Buy Bot</p><img src="imgs/upgrades/buyBot9.png" width="200px">
+                                <p id="costBroughtBot">3840 Info</p>
+                                <p id="amountBroughtBot">You brought 0 Bot</p> 
+                            </div>
+                        </button>
+                        <button><a href=# onclick="buyWifi()"><img id="broughtWifiImg" src="imgs/upgrades/upgradeInternet.png"></a>
+                            <div id="cost-amount-BroughtWifi" >                  
+                                <p>Upgrade Internet</p><img src="imgs/upgrades/upgradeInternet.png" width="200px">
+                                <p id="costBroughtWifi">7680 Info</p>
+                                <p id="amountBroughtWifi">You upgraded 0 Wifi</p> 
+                            </div>
+                        </button>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="buildings">
+                <div id="buildingsBg">
+                    <h3>Buildings</h3>
+                    <div id="buildingsContent">
+                        <button><a href=# onclick="buyBasement()"><img id="broughtBasementImg" src="imgs/buildings/buyBasement1.png"></a>
+                            <div id="cost-amount-BroughtBasement">
+                                <p>Buy a Basement</p><img src="imgs/buildings/buyBasement1.png" height="200px">
+                                <p id="costBroughtBasement">100 Info</p>
+                                <p id="amountBroughtBasement">You own 0 basement</p> 
+                            </div>
+                        </button>
+                        <button><a href=# onclick="buySingleHouse()"><img id="broughtSingleHouseImg" src="imgs/buildings/hackSingleHouse2.png"></a>
+                            <div id="cost-amount-BroughtSingleHouse">
+                                <p>Hack a House</p><img src="imgs/buildings/hackSingleHouse2.png" height="200px">
+                                <p id="costBroughtSingleHouse">300 Info</p>
+                                <p id="amountBroughtSingleHouse">You hacked 0 houses</p> 
+                            </div>
+                        </button>
+                        <button><a href=# onclick="buyNeighborhood()"><img id="broughtNeighborhoodImg" src="imgs/buildings/hackNeighborhood3.png"></a>
+                            <div id="cost-amount-BroughtNeighborhood">
+                                <p>Hack a Neighborhood</p><img src="imgs/buildings/hackNeighborhood3.png" height="200px">
+                                <p id="costBroughtNeighborhood">600 Info</p>
+                                <p id="amountBroughtNeighborhood">You hacked 0 neighborhoods</p> 
+                            </div>
+                        </button>
+                        <button><a href=# onclick="buyLandfill()"><img id="broughtLandfillImg" src="imgs/buildings/buyLandfill4.png"></a>
+                            <div id="cost-amount-BroughtLandfill">
+                                <p>Buy a Landfill</p><img src="imgs/buildings/buyLandfill4.png" height="200px">
+                                <p id="costBroughtLandfill">1000 Info</p>
+                                <p id="amountBroughtLandfill">You hacked 0 landfills</p> 
+                            </div>
+                        </button>
+                        <button><a href=# onclick="buyOfficeBuilding()"><img id="broughtOfficeBuildingImg" src="imgs/buildings/buyAWholeOfficeBuilding5.png"></a>
+                            <div id="cost-amount-BroughtOfficeBuilding">
+                                <p>Hack an Office Building</p><img src="imgs/buildings/buyAWholeOfficeBuilding5.png" height="200px">
+                                <p id="costBroughtOfficeBuilding">1500 Info</p>
+                                <p id="amountBroughtOfficeBuilding">You hacked 0 office buildings</p> 
+                            </div>
+                        </button>
+                        <button><a href=# onclick="buyMetropolis()"><img id="broughtMetropolisImg" src="imgs/buildings/hackMetropolis6.png"></a>
+                            <div id="cost-amount-BroughtMetropolis">
+                                <p>Hack Metropolis</p><img src="imgs/buildings/hackMetropolis6.png" height="200px">
+                                <p id="costBroughtMetropolis">3000 Info</p>
+                                <p id="amountBroughtMetropolis">You hacked 0 metropolises</p> 
+                            </div>
+                        </button>
+                        <button><a href=# onclick="buyTetherGarage()"><img id="broughtTetherGarageImg" src="imgs/buildings/buyTetherGarage7.png"></a>
+                            <div id="cost-amount-BroughtTetherGarage">
+                                <p>Buy Tether Garage</p><img src="imgs/buildings/buyTetherGarage7.png" height="200px">
+                                <p id="costBroughtTetherGarage">4500 Info</p>
+                                <p id="amountBroughtTetherGarage">You hacked 0 tether garages</p> 
+                            </div>
+                        </button>
+                        <button><a href=# onclick="buyEtheriumGarage()"><img id="broughtEtheriumGarageImg" src="imgs/buildings/buyEtheriumGarage8.png"></a>
+                            <div id="cost-amount-BroughtEtheriumGarage">
+                                <p>Buy Etherium Garage</p><img src="imgs/buildings/buyEtheriumGarage8.png" height="200px">
+                                <p id="costBroughtEtheriumGarage">6000 Info</p>
+                                <p id="amountBroughtEtheriumGarage">You hacked 0 etherium garages</p> 
+                            </div>
+                        </button>
+                        <button><a href=# onclick="buyBitcoinGarage()"><img id="broughtBitcoinGarageImg" src="imgs/buildings/buyBitCoinGarage9.png"></a>
+                            <div id="cost-amount-BroughtBitcoinGarage">
+                                <p>Buy Bitcoin Garage</p><img src="imgs/buildings/buyBitCoinGarage9.png" height="200px">
+                                <p id="costBroughtBitcoinGarage">7500 Info</p>
+                                <p id="amountBroughtBitcoinGarage">You hacked 0 etherium garages</p> 
+                            </div>
+                        </button>
+                        <button><a href=# onclick="buyIlluminatiMansion()"><img id="broughtIlluminatiMansionImg" src="imgs/buildings/hackIlluminatiMansion19.png"></a>
+                            <div id="cost-amount-BroughtIlluminatiMansion">
+                                <p>Hack Illuminati Mansion</p><img src="imgs/buildings/hackIlluminatiMansion19.png" height="200px">
+                                <p id="costBroughtIlluminatiMansion">10000 Info</p>
+                                <p id="amountBroughtIlluminatiMansion">You hacked 0 illuminati mansions</p> 
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
