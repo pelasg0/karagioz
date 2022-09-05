@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #000D0D;
+    max-width: 1920px;
+    max-height: 3241px;
+    font-family: 'Open Sans', sans-serif;
+    color: #124C4D;
+}
+a { 
+    color: #2DDCE8;
+}
+h1 {
+    font-size: 70px;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.nav-bar-logo {
+    padding-left: 147px;
+    padding-top: 31px;
+}
+
+/*header*/
+
+header {
+    padding-top: 98px;
+}
+.header-text-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.header-text-wrapper h1 {
+    color: #124C4D;
+    display: block;
+    white-space: nowrap;
+    border-right: 2px solid #124C4D;
+    width: 11ch;
+    animation: typing 2s steps(20),
+    blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+.earth-wrapper {
+    padding-top: 102px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#earth {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: transparent url(refpics/earthtextures/Qk4UXcU.png);
+    background-size: cover;
+    box-shadow: inset 0px -20px 50px 10px #00ffff80, 0px 0px 30px 6px #00ffff70;
+    transform-style: preserve-3d;
+    transform: rotate(20deg);
+    animation: rotate 6s linear infinite;
+}
+.location-text-wrapper {
+    width: 100vw;
+    display: none;
+    justify-content: center;
+}
+header h2 {
+    text-align: center;
+    position: absolute;
+    width: 448px;
+    padding-top: 74px;
+}
+header h2 span {
+    display: block;
+}
+
+/*switch button */
+.switch {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    background: none;
+    transition: background 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    vertical-align: middle;
+    cursor: pointer;
+    left: 75vw;
+    bottom: 12vw;
+    right: 617px;
+    transform: rotate(90deg);
+    border: 1px solid #2DDCE8;
+}
+.switch::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 22px;
+    height: 22px;
+    background: #124C4D;
+    border-radius: 50%;
+    transition: left 0.28s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.switch:active::before {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.28), 0 0 0 20px rgba(128,128,128,0.1);
+}
+input:checked + .switch {
+    background: #2DDCE8;
+}
+input:checked + .switch::before {
+    left: 27px;
+    background: #124C4D;
+}
+input:checked + .switch:active::before {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.28), 0 0 0 20px rgba(0,150,136,0.2);
+}
+/*switch button*/
+
+.button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.button {
+    height: 68px;
+    width: 68px;
+    background-color: none;
+    border: 1px solid #2DDCE8;
+    border-radius: 100px;
+    margin-top: 267px;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    pointer-events: fill;
+}
+.button svg {
+    padding-top: 21.6px;
+}
+.button:hover {
+    background-color: #2DDCE8;
+}
+
+/*ABOUT ME SECTION*/
+
+.about-me {
+    padding-top: 200px;
+    overflow: hidden;
+}
+.about-me-content-wrapper {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 172px;
+}
+.about-me-text-container {
+    display: flex;
+    gap: 100px;
+    flex-direction: column;
+    width: 800px;
+}
+.about-me-text-container h1 {
+    width: 925px
+}
+.about-me-text-container p {
+    font-size: 30px;
+}
+.about-me-image-container {
+    width: 528px;
+    height: 528px;
+    border: 1px solid #124C4D;
+    border-radius: 100%;
+}
+
+/*------------MY----PROJECTS------------*/
+.my-projects { 
+    padding-top: 340px;
+    overflow: hidden;
+}
+.my-projects-wrapper {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 140px;
+}
+
+.my-projects-container {
+	display: flex;
+	width: 90vw;
+}
+.my-projects-headline-wrapper {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+.my-projects-headline-wrapper h1 {
+    color: #124C4D;
+    display: block;
+    white-space: nowrap;
+    border-right: 2px solid #124C4D;
+    width: 10ch;
+    animation: typing 2s steps(20),
+    blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+.panel {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 80vh;
+	border-radius: 200px;
+	flex: 0.5;
+	position: relative;
+	transition: flex 0.5s ease-out;
+	color: #2DDCE8;
+	cursor: pointer;
+	margin: 8px;
+}
+
+.panel h3 {
+	position: absolute;
+	bottom: 24px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	opacity: 0;
+    padding: 20px;
+    background-color: #000D0D;
+    border-radius: 32px;
+}
+
+.panel.active {
+	flex: 4;
+	border-radius: 32px;
+}
+
+.panel.active h3 {
+	opacity: 1;
+	transition: opacity 0.5s ease-out;
+}
+
+
+/*---------------ANIMATIONS---------------*/
+
+/*earth rotate animation*/
+@keyframes rotate {
+	0% {
+		background-position: 0 0;
+	}
+
+	100% {
+		background-position: 558px 0;
+	}
+}
+/*typing animation*/
+@keyframes typing {
+    from { width: 0;}
+}
+/*cursos blick animation*/
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+
+
+
