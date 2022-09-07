@@ -251,6 +251,76 @@ input:checked + .switch:active::before {
 }
 
 
+@media (max-width: 1000px) {
+	
+    h1 {
+        font-size: 40px;
+    }
+    
+    /*nav-bar*/
+    .nav-bar-wrapper { 
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-bar-logo {
+        padding-left: 0;
+    }
+    /*header*/
+    
+    #earth {
+        width: 166px;
+        height: 166px;
+    }
+
+    .switch { 
+        top: 5vh;
+        left: 43vw;
+        bottom: unset;
+        right: unset;
+    }
+
+    /*about-me-*/
+
+    .about-me-content-wrapper {
+        flex-direction: column;
+    }
+
+    .about-me-image-container { 
+        width: 306px;
+        height: 306px;
+    }
+    .about-me-text-container p {
+        font-size: 20px;
+    }
+    .about-me-text-container {
+        width: auto;
+    }
+    .about-me-text-container p {
+        font-size: 30px;
+    }
+    .about-me-image-wrapper {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*MobileVersion*/
+
+
+
 /*---------------ANIMATIONS---------------*/
 
 /*earth rotate animation*/

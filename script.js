@@ -20,7 +20,7 @@ switchButton.addEventListener("click", function(){
 
 /*type animation*/
 const typed2 = new Typed('#about-me-text-headline', {
-    strings: ['Web Developer','Web Designer','Concept Arist','Graphic Designer'],
+    strings: ['Web Developer','Web Designer','Concept Artist','Graphic Designer'],
     typeSpeed: 60,
     backSpeed: 60,
     loop: true
