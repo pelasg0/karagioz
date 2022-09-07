@@ -1,26 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
 
+
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
 }
+
 body {
     background-color: #000D0D;
     max-width: 1920px;
     max-height: 3241px;
     font-family: 'Open Sans', sans-serif;
     color: #124C4D;
+    margin: 20px 50px;
+}
+.all-content-wrapper {
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 a { 
     color: #2DDCE8;
 }
 h1 {
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 300;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 300;
 }
 
@@ -32,10 +45,12 @@ h2 {
 /*header*/
 
 header {
-    padding-top: 98px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    border-bottom: 1px solid #124C4D;
 }
 .header-text-wrapper {
-    width: 100%;
+    max-width: 100vw;
     display: flex;
     justify-content: center;
 }
@@ -51,7 +66,7 @@ header {
 }
 .earth-wrapper {
     padding-top: 102px;
-    width: 100%;
+    max-width: 100vw;
     display: flex;
     justify-content: center;
 }
@@ -68,7 +83,7 @@ header {
     animation: rotate 6s linear infinite;
 }
 .location-text-wrapper {
-    width: 100vw;
+    max-width: 100vw;
     display: none;
     justify-content: center;
 }
@@ -123,10 +138,16 @@ input:checked + .switch::before {
 input:checked + .switch:active::before {
     box-shadow: 0 2px 8px rgba(0,0,0,0.28), 0 0 0 20px rgba(0,150,136,0.2);
 }
+#switch-label {
+    position: relative;
+    left: 75vw;
+    bottom: 12vw;
+    right: 617px;
+}
 /*switch button*/
 
 .button-wrapper {
-    width: 100%;
+    max-width: 100vw;
     display: flex;
     justify-content: center;
 }
@@ -152,11 +173,13 @@ input:checked + .switch:active::before {
 /*ABOUT ME SECTION*/
 
 .about-me {
-    padding-top: 200px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     overflow: hidden;
+    border-bottom: 1px solid #124C4D;
 }
 .about-me-content-wrapper {
-    width: 100vw;
+    max-width: 100vw;
     display: flex;
     justify-content: center;
     gap: 172px;
@@ -171,7 +194,7 @@ input:checked + .switch:active::before {
     width: 925px
 }
 .about-me-text-container p {
-    font-size: 30px;
+    font-size: 20px;
 }
 .about-me-image-container {
     width: 528px;
@@ -182,11 +205,11 @@ input:checked + .switch:active::before {
 
 /*------------MY----PROJECTS------------*/
 .my-projects { 
-    padding-top: 340px;
+    padding-top: 150px;
     overflow: hidden;
 }
 .my-projects-wrapper {
-    width: 100vw;
+    max-width: 100vw;
     display: flex;
     justify-content: center;
     padding-bottom: 140px;
@@ -197,7 +220,7 @@ input:checked + .switch:active::before {
 	width: 90vw;
 }
 .my-projects-headline-wrapper {
-    width: 100vw;
+    max-width: 100vw;
     display: flex;
     justify-content: center;
     padding-bottom: 100px;
@@ -217,7 +240,6 @@ input:checked + .switch:active::before {
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 80vh;
-	border-radius: 200px;
 	flex: 0.5;
 	position: relative;
 	transition: flex 0.5s ease-out;
@@ -242,7 +264,6 @@ input:checked + .switch:active::before {
 
 .panel.active {
 	flex: 4;
-	border-radius: 32px;
 }
 
 .panel.active h3 {
@@ -254,12 +275,12 @@ input:checked + .switch:active::before {
 @media (max-width: 1000px) {
 	
     h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
     
     /*nav-bar*/
     .nav-bar-wrapper { 
-        width: 100vw;
+        max-width: 100vw;
         display: flex;
         justify-content: center;
     }
@@ -272,12 +293,13 @@ input:checked + .switch:active::before {
         width: 166px;
         height: 166px;
     }
-
-    .switch { 
-        top: 5vh;
-        left: 43vw;
-        bottom: unset;
-        right: unset;
+    .switch-button-container {
+        position: relative;
+        top: 178px;
+        right: 141px;
+    }
+    header h2 {
+        padding-top: 153px;
     }
 
     /*about-me-*/
@@ -291,16 +313,13 @@ input:checked + .switch:active::before {
         height: 306px;
     }
     .about-me-text-container p {
-        font-size: 20px;
+        font-size: 15px;
     }
     .about-me-text-container {
         width: auto;
     }
-    .about-me-text-container p {
-        font-size: 30px;
-    }
     .about-me-image-wrapper {
-        width: 100vw;
+        max-width: 100vw;
         display: flex;
         justify-content: center;
     }
