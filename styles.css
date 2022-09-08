@@ -16,7 +16,7 @@ body {
     max-height: 3241px;
     font-family: 'Open Sans', sans-serif;
     color: #124C4D;
-    margin: 20px 50px;
+    margin: 5vh 15vw;
 }
 .all-content-wrapper {
     max-width: 100vw;
@@ -28,7 +28,7 @@ a {
     color: #2DDCE8;
 }
 h1 {
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 300;
 }
 
@@ -37,6 +37,13 @@ h2 {
     font-weight: 300;
 }
 
+
+
+/*nav-bar*/
+
+.nav-bar-wrapper {
+    border-bottom: 1px solid #124C4D;
+}
 .nav-bar-logo {
     padding-left: 147px;
     padding-top: 31px;
@@ -108,9 +115,6 @@ header h2 span {
     transition: background 0.28s cubic-bezier(0.4, 0, 0.2, 1);
     vertical-align: middle;
     cursor: pointer;
-    left: 75vw;
-    bottom: 12vw;
-    right: 617px;
     transform: rotate(90deg);
     border: 1px solid #2DDCE8;
 }
@@ -140,10 +144,12 @@ input:checked + .switch:active::before {
 }
 #switch-label {
     position: relative;
-    left: 75vw;
-    bottom: 12vw;
-    right: 617px;
 }
+.switch-button-container {
+    position: relative;
+    top: 10vh;
+}
+
 /*switch button*/
 
 .button-wrapper {
@@ -182,23 +188,26 @@ input:checked + .switch:active::before {
     max-width: 100vw;
     display: flex;
     justify-content: center;
-    gap: 172px;
+    gap: 10vw;
+}
+#about-me-text-newline {
+    display: block;
 }
 .about-me-text-container {
     display: flex;
     gap: 100px;
     flex-direction: column;
-    width: 800px;
+    width: 530px;
 }
 .about-me-text-container h1 {
-    width: 925px
+    width: auto;
 }
 .about-me-text-container p {
     font-size: 20px;
 }
 .about-me-image-container {
-    width: 528px;
-    height: 528px;
+    width: 400px;
+    height: 400px;
     border: 1px solid #124C4D;
     border-radius: 100%;
 }
@@ -207,6 +216,7 @@ input:checked + .switch:active::before {
 .my-projects { 
     padding-top: 150px;
     overflow: hidden;
+    background-color: #001e1e;
 }
 .my-projects-wrapper {
     max-width: 100vw;
@@ -239,8 +249,8 @@ input:checked + .switch:active::before {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 80vh;
-	flex: 0.5;
+	height: 40vh;
+	flex: 2;
 	position: relative;
 	transition: flex 0.5s ease-out;
 	color: #2DDCE8;
@@ -272,7 +282,11 @@ input:checked + .switch:active::before {
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1450px) {
+
+    body {
+        margin: 10vh 5vw;
+    }
 	
     h1 {
         font-size: 30px;
@@ -295,8 +309,7 @@ input:checked + .switch:active::before {
     }
     .switch-button-container {
         position: relative;
-        top: 178px;
-        right: 141px;
+        
     }
     header h2 {
         padding-top: 153px;
