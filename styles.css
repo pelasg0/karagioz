@@ -281,11 +281,16 @@ input:checked + .switch:active::before {
 	transition: opacity 0.5s ease-out;
 }
 
+@media (max-width: 1400px) {
+    .about-me-content-wrapper {
+        gap: 0vw;
+    }
+}
 
-@media (max-width: 1450px) {
+@media (max-width: 1220px) {
 
     body {
-        margin: 10vh 5vw;
+        margin: 5vh 5vw;
     }
 	
     h1 {
@@ -302,7 +307,13 @@ input:checked + .switch:active::before {
         padding-left: 0;
     }
     /*header*/
-    
+    .button {
+        margin-top: 150px;
+    }
+    header {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
     #earth {
         width: 166px;
         height: 166px;
@@ -317,8 +328,13 @@ input:checked + .switch:active::before {
 
     /*about-me-*/
 
+    .about-me {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
     .about-me-content-wrapper {
         flex-direction: column;
+        gap: 40px;
     }
 
     .about-me-image-container { 
@@ -330,6 +346,7 @@ input:checked + .switch:active::before {
     }
     .about-me-text-container {
         width: auto;
+        gap: 40px;
     }
     .about-me-image-wrapper {
         max-width: 100vw;
