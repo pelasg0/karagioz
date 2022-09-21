@@ -424,7 +424,9 @@ input:checked + .switch:active::before {
         display: flex;
         justify-content: center;
     }
-
+    .about-me-image-container img {
+        width: -webkit-fill-available;
+    }    
 }
 
 
