@@ -345,6 +345,10 @@ input:checked + .switch:active::before {
 }
 
 
+
+
+
+
 /*contacts-section*/
 
 @media (max-width: 1400px) {
@@ -383,6 +387,7 @@ input:checked + .switch:active::before {
     #earth {
         width: 166px;
         height: 166px;
+        animation: rotatesecond 6s linear infinite;
     }
     .switch-button-container {
         position: relative;
@@ -427,19 +432,9 @@ input:checked + .switch:active::before {
     .about-me-image-container img {
         width: -webkit-fill-available;
     }    
+
 }
 
-
-
-
-
-
-
-
-
-
-
-/*MobileVersion*/
 
 
 
@@ -455,6 +450,15 @@ input:checked + .switch:active::before {
 		background-position: 558px 0;
 	}
 }
+@keyframes rotatesecond {
+	0% {
+		background-position: 0 0;
+	}
+
+	100% {
+		background-position: 308px 0;
+	}
+}
 /*typing animation*/
 @keyframes typing {
     from { width: 0;}
@@ -463,6 +467,10 @@ input:checked + .switch:active::before {
 @keyframes blink {
     50% { border-color: transparent; }
 }
+
+
+
+
 
 
 
