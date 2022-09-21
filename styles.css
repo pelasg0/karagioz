@@ -39,8 +39,6 @@ h2 {
     font-weight: 300;
 }
 
-
-
 /*nav-bar*/
 
 .nav-bar-wrapper {
@@ -106,6 +104,7 @@ header h2 span {
 }
 
 /*switch button */
+
 .switch {
     display: inline-block;
     position: relative;
@@ -252,10 +251,8 @@ input:checked + .switch:active::before {
     color: #2DDCE8;
 }
 
-
-
-
 /*------------MY----PROJECTS------------*/
+
 .my-projects { 
     padding-top: 50px;
     overflow: hidden;
@@ -300,7 +297,6 @@ input:checked + .switch:active::before {
 	cursor: pointer;
 	margin: 8px;
 }
-
 .panel h3 {
 	position: absolute;
 	bottom: 24px;
@@ -314,16 +310,13 @@ input:checked + .switch:active::before {
     background-color: #000D0D;
     border-radius: 32px;
 }
-
 .panel.active {
 	flex: 4;
 }
-
 .panel.active h3 {
 	opacity: 1;
 	transition: opacity 0.5s ease-out;
 }
-
 
 /*contacts-section*/
 
@@ -344,11 +337,6 @@ input:checked + .switch:active::before {
     height: 20px;
 }
 
-
-
-
-
-
 /*contacts-section*/
 
 @media (max-width: 1400px) {
@@ -356,7 +344,6 @@ input:checked + .switch:active::before {
         gap: 0vw;
     }
 }
-
 @media (max-width: 1220px) {
 
     body {
@@ -368,6 +355,7 @@ input:checked + .switch:active::before {
     }
     
     /*nav-bar*/
+
     .nav-bar-wrapper { 
         max-width: 100vw;
         display: flex;
@@ -376,7 +364,9 @@ input:checked + .switch:active::before {
     .nav-bar-logo {
         padding-left: 0;
     }
+
     /*header*/
+
     .button {
         margin-top: 170px;
     }
@@ -399,9 +389,11 @@ input:checked + .switch:active::before {
     }
 
     /*skills*/
+
     .skills-content-container {
         font-size: 20px;
     }
+
     /*about-me-*/
 
     .about-me {
@@ -435,12 +427,10 @@ input:checked + .switch:active::before {
 
 }
 
-
-
-
 /*---------------ANIMATIONS---------------*/
 
 /*earth rotate animation*/
+
 @keyframes rotate {
 	0% {
 		background-position: 0 0;
@@ -459,11 +449,15 @@ input:checked + .switch:active::before {
 		background-position: 308px 0;
 	}
 }
+
 /*typing animation*/
+
 @keyframes typing {
     from { width: 0;}
 }
+
 /*cursos blick animation*/
+
 @keyframes blink {
     50% { border-color: transparent; }
 }
