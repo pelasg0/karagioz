@@ -21,10 +21,30 @@ switchButton.addEventListener("click", function(){
 /*type animation*/
 const typed2 = new Typed('#about-me-text-headline', {
     strings: ['Web Developer','Web Designer','Concept Artist','Graphic Designer'],
-    typeSpeed: 60,
-    backSpeed: 60,
+    typeSpeed: 80,
+    backSpeed: 80,
     loop: true
-  });
+});
+
+const typed3 = new Typed('#header-text', {
+    strings: ['Hello World !'],
+    typeSpeed: 150,
+    loop: false
+})
+
+const typed4 = new Typed('#skills-text', {
+    strings: ['My Skills'],
+    typeSpeed: 150,
+    loop: false
+})
+
+const typed5 = new Typed('#project-text', {
+    strings: ['My Projects'],
+    typeSpeed: 150,
+    loop: false
+})
+
+
 
 
 
@@ -34,19 +54,3 @@ const typed2 = new Typed('#about-me-text-headline', {
 https://youtu.be/69FkUGpw3ok
 */
 
-
-/*panels*/
-
-
-panels.forEach((panel) => {
-	panel.addEventListener("click", () => {
-		removeActiveClasses();
-		panel.classList.add("active");
-	});
-});
-
-function removeActiveClasses() {
-	panels.forEach((panel) => {
-		panel.classList.remove("active");
-	});
-}

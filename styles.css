@@ -26,6 +26,7 @@ body {
 }
 a { 
     color: #2DDCE8;
+    text-decoration: none;
 }
 h1 {
     color: #128486;
@@ -63,12 +64,12 @@ header {
 .header-text-wrapper h1 {
     color: #128486;
     display: block;
-    white-space: nowrap;
+    /* white-space: nowrap;
     border-right: 2px solid #124C4D;
     width: 11ch;
     animation: typing 2s steps(20),
     blink .5s infinite step-end alternate;
-    overflow: hidden;
+    overflow: hidden; */
 }
 .earth-wrapper {
     padding-top: 50px;
@@ -213,7 +214,7 @@ input:checked + .switch:active::before {
     overflow: hidden;
 }
 .about-me-image-container img {
-    width: -webkit-fill-available;
+    width: inherit;
 }
 
 /*------------SKILLS------------*/
@@ -231,12 +232,12 @@ input:checked + .switch:active::before {
 .skills-headline-wrapper h1{
     color: #128486;
     display: block;
-    white-space: nowrap;
+    /* white-space: nowrap;
     border-right: 2px solid #124C4D;
     width: 7.5ch;
     animation: typing 2s steps(20),
     blink .5s infinite step-end alternate;
-    overflow: hidden;
+    overflow: hidden; */
 }
 .skills-content-container {
     font-size: 25px;
@@ -278,46 +279,91 @@ input:checked + .switch:active::before {
 .my-projects-headline-wrapper h1 {
     color: #128486;
     display: block;
-    white-space: nowrap;
+    /* white-space: nowrap;
     border-right: 2px solid #124C4D;
     width: 10ch;
     animation: typing 2s steps(20),
     blink .5s infinite step-end alternate;
-    overflow: hidden;
-}
-.panel {
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 40vh;
-	flex: 2;
-	position: relative;
-	transition: flex 0.5s ease-out;
-	color: #2DDCE8;
-	cursor: pointer;
-	margin: 8px;
-}
-.panel h3 {
-	position: absolute;
-	bottom: 24px;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 20px;
-	font-weight: 300;
-	letter-spacing: 2px;
-	opacity: 0;
-    padding: 20px;
-    background-color: #000D0D;
-    border-radius: 32px;
-}
-.panel.active {
-	flex: 4;
-}
-.panel.active h3 {
-	opacity: 1;
-	transition: opacity 0.5s ease-out;
+    overflow: hidden; */
 }
 
+/*dasdas*/
+
+.my-projects-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .my-projects-container img {
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+  }
+  
+  .img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+  }
+  
+  .img-box img {
+    object-fit: cover;
+  }
+  .caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .caption p span { 
+    color: #2DDCE8;
+  }
+  .transparent-box {
+    height: 250px;
+    width: 350px;
+    background-color:rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .img-box:hover img { 
+    transform: scale(1.1);
+  }
+  
+  .img-box:hover .transparent-box {
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+  
+  .img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+  }
+  
+  .img-box:hover {
+    cursor: pointer;
+  }
+  
+  .caption > p:nth-child(2) {
+    font-size: 0.8em;
+  }
+  
+  .opacity-low {
+    opacity: 0.5;
+  }
+  /*dasdas*/
 /*contacts-section*/
 
 .contacts-wrapper {
