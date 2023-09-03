@@ -84,7 +84,7 @@ header {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: transparent url(refpics/earthtextures/Qk4UXcU.png);
+    background: transparent url("reference material/header picture textures/Qk4UXcU.png");
     background-size: cover;
     box-shadow: inset 0px -20px 50px 10px #00ffff80, 0px 0px 30px 6px #00ffff70;
     transform-style: preserve-3d;

@@ -8,11 +8,11 @@ const panels = document.querySelectorAll(".panel");
 
 switchButton.addEventListener("click", function(){
     if(switchButton.checked) {
-        earthPic.style.backgroundImage = "url('refpics/earthtextures/Qk4UXcU4.png')";
+        earthPic.style.backgroundImage = "url('reference material/header picture textures/Qk4UXcU4.png')";
         locationText.style.display = "flex";
     }
     else {
-        earthPic.style.backgroundImage = "url('refpics/earthtextures/Qk4UXcU.png')";
+        earthPic.style.backgroundImage = "url('reference material/header picture textures/Qk4UXcU.png')";
         locationText.style.display = "none";
     }
 })
